@@ -61,6 +61,7 @@ export default function Home() {
         </a>
         <nav aria-label="Primary navigation">
           <a href="#tools">Tools</a>
+          <a href="#demos">Demos</a>
           <a href="#workflow">How it works</a>
           <a href="#pilot">Singapore pilot</a>
         </nav>
@@ -193,6 +194,65 @@ export default function Home() {
               </div>
             </article>
           ))}
+        </div>
+      </section>
+
+      <section className="demo-section" id="demos">
+        <div className="demo-heading">
+          <div>
+            <p className="eyebrow">See the workflows in action</p>
+            <h2>Real product demos.<br />No slideware.</h2>
+          </div>
+          <p>Watch HomeDash turn listing assets into an agent-led property story and an always-on social marketing workflow.</p>
+        </div>
+
+        <div className="demo-grid">
+          <article className="demo-card">
+            <div className="demo-video-shell">
+              <video controls playsInline preload="metadata" aria-label="HomeDash AI property tour demonstration">
+                <source src="/videos/property-tour-demo.mp4" type="video/mp4" />
+                Your browser does not support embedded video.
+              </video>
+              <span className="demo-duration">00:57</span>
+            </div>
+            <div className="demo-meta">
+              <span>01</span>
+              <div><p>AI property tour</p><h3>From property assets to an agent-led tour.</h3></div>
+            </div>
+          </article>
+
+          <article className="demo-card">
+            <div className="demo-video-shell">
+              <video controls playsInline preload="metadata" aria-label="HomeDash automated social post creation demonstration">
+                <source src="/videos/automated-post-creation.mp4" type="video/mp4" />
+                Your browser does not support embedded video.
+              </video>
+              <span className="demo-duration">00:55</span>
+            </div>
+            <div className="demo-meta">
+              <span>02</span>
+              <div><p>Automated post creation</p><h3>Turn a content brief into a branded post.</h3></div>
+            </div>
+          </article>
+
+          <article className="demo-card">
+            <div className="demo-video-shell">
+              <video controls playsInline preload="metadata" aria-label="HomeDash automated marketing workflow demonstration">
+                <source src="/videos/automated-marketing.mp4" type="video/mp4" />
+                Your browser does not support embedded video.
+              </video>
+              <span className="demo-duration">00:52</span>
+            </div>
+            <div className="demo-meta">
+              <span>03</span>
+              <div><p>Automated marketing</p><h3>Keep the campaign moving with human approval.</h3></div>
+            </div>
+          </article>
+        </div>
+
+        <div className="demo-cta">
+          <p><span className="live-dot" /> Three live workflows. One connected content engine.</p>
+          <a className="button button-small" href="#pilot">Discuss a pilot use case <span aria-hidden="true">↗</span></a>
         </div>
       </section>
 
