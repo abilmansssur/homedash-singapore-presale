@@ -30,6 +30,7 @@ test("server-renders the HomeDash Singapore presale page", async () => {
   assert.match(html, /\/videos\/property-tour-demo\.mp4/i);
   assert.match(html, /\/videos\/automated-post-creation\.mp4/i);
   assert.match(html, /\/videos\/automated-marketing\.mp4/i);
+  assert.match(html, /\/videos\/property-tour-poster\.jpg/i);
   assert.match(html, /Singapore market pilot/i);
   assert.match(html, /Request pilot access/i);
   assert.match(html, /og\.png/i);

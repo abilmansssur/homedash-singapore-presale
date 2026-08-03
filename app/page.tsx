@@ -209,7 +209,7 @@ export default function Home() {
         <div className="demo-grid">
           <article className="demo-card">
             <div className="demo-video-shell">
-              <video controls playsInline preload="metadata" aria-label="HomeDash AI property tour demonstration">
+              <video controls playsInline preload="metadata" poster="/videos/property-tour-poster.jpg" aria-label="HomeDash AI property tour demonstration">
                 <source src="/videos/property-tour-demo.mp4" type="video/mp4" />
                 Your browser does not support embedded video.
               </video>
@@ -223,7 +223,7 @@ export default function Home() {
 
           <article className="demo-card">
             <div className="demo-video-shell">
-              <video controls playsInline preload="metadata" aria-label="HomeDash automated social post creation demonstration">
+              <video controls playsInline preload="metadata" poster="/videos/post-creation-poster.jpg" aria-label="HomeDash automated social post creation demonstration">
                 <source src="/videos/automated-post-creation.mp4" type="video/mp4" />
                 Your browser does not support embedded video.
               </video>
@@ -237,7 +237,7 @@ export default function Home() {
 
           <article className="demo-card">
             <div className="demo-video-shell">
-              <video controls playsInline preload="metadata" aria-label="HomeDash automated marketing workflow demonstration">
+              <video controls playsInline preload="metadata" poster="/videos/automated-marketing-poster.jpg" aria-label="HomeDash automated marketing workflow demonstration">
                 <source src="/videos/automated-marketing.mp4" type="video/mp4" />
                 Your browser does not support embedded video.
               </video>
