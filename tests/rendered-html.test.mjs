@@ -29,6 +29,10 @@ test("server-renders the HomeDash Singapore presale page", async () => {
   assert.match(html, /Automated social marketing/i);
   assert.match(html, /RICACORP PROPERTIES/i);
   assert.match(html, /CENTURY 21/i);
+  assert.match(html, /\/logo-ricacorp\.png/i);
+  assert.match(html, /\/logo-century21\.png/i);
+  assert.match(html, /\/logo-gamway\.png/i);
+  assert.match(html, /\/logo-sunrise\.png/i);
   assert.match(html, /30\+/i);
   assert.match(html, /912/);
   assert.doesNotMatch(html, /id="demos"|See the workflows in action/i);

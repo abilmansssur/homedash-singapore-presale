@@ -84,11 +84,11 @@ export default function Home() {
           <p>HomeDash’s wider operating platform is trusted by established Hong Kong property agencies. The Singapore presale brings its newest listing-video, agent-avatar and marketing workflows to a focused local pilot.</p>
         </div>
         <div className="agency-list" aria-label="Hong Kong agencies named by HomeDash">
-          <div><strong>RICACORP PROPERTIES</strong><span>利嘉閣</span></div>
-          <div><strong>CENTURY 21</strong><span>世紀21</span></div>
-          <div><strong>GAMWAY PROPERTY</strong><span>金滙地產</span></div>
-          <div><strong>SUNRISE PROPERTY</strong><span>太陽物業</span></div>
-          <div><strong>LAND MASTER</strong><span>伯樂行</span></div>
+          <div><div className="agency-logo"><img src="/logo-ricacorp.png" alt="Ricacorp Properties logo" width="500" height="114" loading="lazy" /></div><strong>RICACORP PROPERTIES</strong><span>利嘉閣</span></div>
+          <div><div className="agency-logo"><img src="/logo-century21.png" alt="Century 21 logo" width="1807" height="230" loading="lazy" /></div><strong>CENTURY 21</strong><span>世紀21</span></div>
+          <div><div className="agency-logo"><img src="/logo-gamway.png" alt="Gamway Property logo" width="1000" height="105" loading="lazy" /></div><strong>GAMWAY PROPERTY</strong><span>金滙地產</span></div>
+          <div><div className="agency-logo"><img src="/logo-sunrise.png" alt="Sunrise Property logo" width="1281" height="353" loading="lazy" /></div><strong>SUNRISE PROPERTY</strong><span>太陽物業</span></div>
+          <div><div className="agency-logo agency-wordmark" aria-label="Land Master wordmark"><b>LAND MASTER</b><small>伯樂行</small></div><strong>LAND MASTER</strong><span>伯樂行</span></div>
         </div>
         <div className="adoption-stats">
           <div><strong>30+</strong><span>paying agencies</span></div>
