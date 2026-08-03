@@ -1,7 +1,3 @@
-"use client";
-
-import { FormEvent, useState } from "react";
-
 const tools = [
   {
     number: "01",
@@ -30,28 +26,6 @@ const tools = [
 ];
 
 export default function Home() {
-  const [submitted, setSubmitted] = useState(false);
-
-  function submitPilot(event: FormEvent<HTMLFormElement>) {
-    event.preventDefault();
-    const form = new FormData(event.currentTarget);
-    const message = [
-      "Hi HomeDash, I’d like to discuss the Singapore market pilot.",
-      `Name: ${form.get("name")}`,
-      `Agency: ${form.get("agency")}`,
-      `Contact: ${form.get("contact")}`,
-      `Team size: ${form.get("teamSize")}`,
-      `Priority: ${form.get("priority")}`,
-    ].join("\n");
-
-    window.open(
-      `https://wa.me/85293173883?text=${encodeURIComponent(message)}`,
-      "_blank",
-      "noopener,noreferrer",
-    );
-    setSubmitted(true);
-  }
-
   return (
     <main>
       <header className="site-header">
@@ -64,7 +38,7 @@ export default function Home() {
           <a href="#workflow">How it works</a>
           <a href="#pilot">Singapore pilot</a>
         </nav>
-        <a className="button button-small" href="#pilot">Join the presale</a>
+        <a className="button button-small" href="#booking">Book a 30-minute call</a>
       </header>
 
       <section className="hero hero-artwork-section" id="top" aria-labelledby="hero-title">
@@ -84,7 +58,7 @@ export default function Home() {
           <p className="eyebrow"><span className="pulse" /> Singapore market pilot · Presale 2026</p>
           <h2>One listing.<br /><em>Three ways</em> to win attention.</h2>
           <p>Turn property photos into listing videos, agent-led AI tours and approved social campaigns.</p>
-          <a className="button" href="#pilot">Request pilot access <span aria-hidden="true">↗</span></a>
+          <a className="button" href="#booking">Book a 30-minute call <span aria-hidden="true">↗</span></a>
         </div>
       </section>
 
@@ -191,27 +165,29 @@ export default function Home() {
         <div className="pilot-copy">
           <p className="eyebrow light">Singapore market pilot · Limited intake</p>
           <h2>Bring one live listing bottleneck.<br />Leave with a practical pilot plan.</h2>
-          <p>In a focused 20-minute call, we’ll map your workflow, approval points and what a useful first result should look like.</p>
+          <p>In a focused 30-minute call, we’ll map your workflow, approval points and what a useful first result should look like.</p>
           <ul className="pilot-benefits">
             <li><span>01</span><div><strong>Singapore-ready workflow</strong><p>Localised around your listing, brand and team structure.</p></div></li>
             <li><span>02</span><div><strong>Early product influence</strong><p>Help shape the templates and controls your team needs.</p></div></li>
             <li><span>03</span><div><strong>Focused first use case</strong><p>Start with video, avatar tours or social marketing—not a giant rollout.</p></div></li>
           </ul>
         </div>
-        <form className="pilot-form" onSubmit={submitPilot}>
-          <div className="form-head"><span>MARKET PILOT APPLICATION</span><strong>Singapore · 2026</strong></div>
-          <label>Name<input name="name" required placeholder="Your name" /></label>
-          <label>Agency / company<input name="agency" required placeholder="Agency name" /></label>
-          <label>Email or WhatsApp<input name="contact" required placeholder="How should we reach you?" /></label>
-          <div className="form-row">
-            <label>Team size<select name="teamSize" defaultValue=""><option value="" disabled>Select</option><option>Independent agent</option><option>2–10 agents</option><option>11–50 agents</option><option>51+ agents</option></select></label>
-            <label>Priority workflow<select name="priority" defaultValue="Listing video"><option>Listing video</option><option>Agent-avatar tour</option><option>Social marketing</option><option>Full content loop</option></select></label>
+        <div className="booking-panel" id="booking">
+          <div className="booking-head">
+            <div><span>BOOK YOUR PILOT CONSULTATION</span><strong>Singapore · 30 minutes</strong></div>
+            <p>Select an available time without leaving the page.</p>
           </div>
-          <button className="button form-button" type="submit">Request pilot access <span>↗</span></button>
-          <p className="form-note">Opens a pre-filled WhatsApp message. You stay in control of sending it.</p>
-          {submitted && <p className="success-message" role="status">Your pilot request is ready in WhatsApp. We look forward to speaking with you.</p>}
-          <a className="email-link" href="mailto:info@homedash.hk">Prefer email? info@homedash.hk</a>
-        </form>
+          <iframe
+            className="calendly-frame"
+            src="https://calendly.com/max-homedash/30min?hide_gdpr_banner=1&background_color=ffffff&text_color=17203d&primary_color=ffb21a"
+            title="Book a 30-minute HomeDash Singapore pilot consultation"
+            loading="lazy"
+          />
+          <div className="booking-fallback">
+            <span>Prefer another channel?</span>
+            <a href="https://wa.me/85293173883" target="_blank" rel="noreferrer">Discuss your use case on WhatsApp ↗</a>
+          </div>
+        </div>
       </section>
 
       <section className="faq-section">

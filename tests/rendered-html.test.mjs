@@ -33,7 +33,8 @@ test("server-renders the HomeDash Singapore presale page", async () => {
   assert.match(html, /\/videos\/automated-marketing\.mp4/i);
   assert.match(html, /\/videos\/property-tour-poster\.jpg/i);
   assert.match(html, /Singapore market pilot/i);
-  assert.match(html, /Request pilot access/i);
+  assert.match(html, /Book a 30-minute call/i);
+  assert.match(html, /https:\/\/calendly\.com\/max-homedash\/30min/i);
   assert.match(html, /og\.png/i);
   assert.doesNotMatch(html, /codex-preview|Your site is taking shape|react-loading-skeleton/i);
 });
