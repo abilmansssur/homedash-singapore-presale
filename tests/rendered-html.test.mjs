@@ -33,6 +33,7 @@ test("server-renders the HomeDash Singapore presale page", async () => {
   assert.match(html, /\/logo-century21\.png/i);
   assert.match(html, /\/logo-gamway\.png/i);
   assert.match(html, /\/logo-sunrise\.png/i);
+  assert.doesNotMatch(html, /LAND MASTER|伯樂行/i);
   assert.match(html, /30\+/i);
   assert.match(html, /912/);
   assert.match(html, /One week\. Unlimited videos/i);
