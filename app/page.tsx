@@ -218,6 +218,31 @@ export default function Home() {
         </div>
       </section>
 
+      <section className="pilot-package-section" aria-labelledby="pilot-package-title">
+        <div className="pilot-package-heading">
+          <div>
+            <p className="eyebrow">Singapore pilot package</p>
+            <h2 id="pilot-package-title">One week. Unlimited videos. Three ways to publish.</h2>
+          </div>
+          <div className="rolling-note"><span className="live-dot" /> Applications reviewed on a rolling basis</div>
+        </div>
+        <div className="pilot-package-stats">
+          <article><strong>7 days</strong><h3>Unlimited generation</h3><p>Generate as many property videos as you need during your pilot week.</p></article>
+          <article><strong>≈ 5 min</strong><h3>From photos to video</h3><p>When the property photos are ready, production time is reduced to approximately five minutes.</p></article>
+          <article><strong>3 formats</strong><h3>Choose the right story</h3><p>Use AutoPan, Classic Tour or Social Video for each listing and channel.</p></article>
+          <article><strong>1 + 1</strong><h3>Your agent avatar</h3><p>Provide one approved agent picture and a short voice note to appear in Social Videos.</p></article>
+        </div>
+        <div className="pilot-formats" aria-label="Video formats included in the HomeDash pilot">
+          <div><span>01</span><strong>AutoPan</strong><p>Add smooth motion to static property photos.</p></div>
+          <div><span>02</span><strong>Classic Tour</strong><p>Turn listing images into a guided property story.</p></div>
+          <div><span>03</span><strong>Social Video</strong><p>Bring the agent on-screen through an approved avatar and voice.</p></div>
+        </div>
+        <div className="pilot-package-cta">
+          <p>No fixed application deadline. Start when there is a suitable pilot slot.</p>
+          <a className="button" href="#booking">Book your pilot consultation <span aria-hidden="true">↗</span></a>
+        </div>
+      </section>
+
       <section className="pilot-section" id="pilot">
         <div className="pilot-copy">
           <p className="eyebrow light">Singapore market pilot · Limited intake</p>
@@ -251,7 +276,9 @@ export default function Home() {
         <div><p className="eyebrow">Questions, answered</p><h2>Before you join the pilot.</h2></div>
         <div className="faq-list">
           <details><summary>Do agents need to film the property?</summary><p>No. The static-image-to-video workflow starts from property photos and listing details. HomeDash prepares the motion, captions and voiceover for review.</p></details>
-          <details><summary>What is needed for an agent-avatar tour?</summary><p>One approved agent photo and a short voice sample, plus your listing assets and brand preferences. Your team reviews the result before use.</p></details>
+          <details><summary>How many videos can I generate during the pilot?</summary><p>There is no video-generation cap during your one-week pilot. You can test AutoPan, Classic Tour and Social Video across as many suitable listings as you need.</p></details>
+          <details><summary>How quickly can a video be produced?</summary><p>When the property photos are already available, the HomeDash workflow reduces production time to approximately five minutes.</p></details>
+          <details><summary>What is needed for an agent-avatar Social Video?</summary><p>One approved agent picture and a short voice note, plus your listing assets and brand preferences. Your team reviews the result before use.</p></details>
           <details><summary>Will social posts publish automatically?</summary><p>HomeDash prepares campaign drafts and a content queue. Customer-facing content is routed through human approval before publishing.</p></details>
           <details><summary>Is HomeDash already available in Singapore?</summary><p>HomeDash is recruiting Singapore market-pilot agencies. The presale call is used to identify a focused use case, approval process and useful pilot result.</p></details>
         </div>
