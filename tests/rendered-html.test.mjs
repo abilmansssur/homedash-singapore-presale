@@ -26,7 +26,7 @@ test("server-renders the HomeDash Singapore presale page", async () => {
   assert.match(html, /Static image → AI video/i);
   assert.match(html, /Agent-led AI property tour/i);
   assert.match(html, /Automated social marketing/i);
-  assert.match(html, /See the workflows in action/i);
+  assert.doesNotMatch(html, /id="demos"|See the workflows in action/i);
   assert.match(html, /\/videos\/property-tour-demo\.mp4/i);
   assert.match(html, /\/videos\/automated-post-creation\.mp4/i);
   assert.match(html, /\/videos\/automated-marketing\.mp4/i);

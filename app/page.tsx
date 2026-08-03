@@ -61,7 +61,6 @@ export default function Home() {
         </a>
         <nav aria-label="Primary navigation">
           <a href="#tools">Tools</a>
-          <a href="#demos">Demos</a>
           <a href="#workflow">How it works</a>
           <a href="#pilot">Singapore pilot</a>
         </nav>
@@ -159,100 +158,40 @@ export default function Home() {
                   {tool.points.map((point) => <li key={point}><span>✓</span>{point}</li>)}
                 </ul>
               </div>
-              <div className={`tool-visual ${tool.visual}`}>
+              <div className={`tool-visual tool-video ${tool.visual}`}>
                 {tool.visual === "video" && (
                   <>
-                    <div className="media-label">FROM 8 PROPERTY PHOTOS</div>
-                    <div className="phone-frame">
-                      <div className="phone-scene"><span className="phone-play">▶</span><span className="phone-caption">Space to arrive.<br /><strong>Room to stay.</strong></span></div>
-                      <div className="timeline"><span /><span /><span /><span /></div>
-                    </div>
-                    <div className="render-pill"><span className="spinner">✦</span> Motion, captions and voiceover prepared</div>
+                    <video controls playsInline preload="metadata" poster="/videos/post-creation-poster.jpg" aria-label="HomeDash automated post creation demonstration">
+                      <source src="/videos/automated-post-creation.mp4" type="video/mp4" />
+                      Your browser does not support embedded video.
+                    </video>
+                    <span className="tool-video-label">Automated post creation</span>
+                    <span className="tool-video-duration">00:55</span>
                   </>
                 )}
                 {tool.visual === "avatar" && (
                   <>
-                    <div className="tour-screen">
-                      <div className="tour-room"><span className="window" /><span className="sofa" /></div>
-                      <div className="agent-bubble"><span className="agent-head" /><strong>Your agent</strong><small>Digital twin</small></div>
-                      <div className="tour-subtitle">“Let me show you the view from the living room.”</div>
-                    </div>
-                    <div className="consent-note"><span>✓</span><div><strong>Agent-approved assets</strong><small>Photo · voice · brand profile</small></div></div>
+                    <video controls playsInline preload="metadata" poster="/videos/property-tour-poster.jpg" aria-label="HomeDash AI property tour demonstration">
+                      <source src="/videos/property-tour-demo.mp4" type="video/mp4" />
+                      Your browser does not support embedded video.
+                    </video>
+                    <span className="tool-video-label">AI property tour</span>
+                    <span className="tool-video-duration">00:57</span>
                   </>
                 )}
                 {tool.visual === "social" && (
                   <>
-                    <div className="calendar-head"><strong>Content queue</strong><span>Week 32</span></div>
-                    <div className="social-grid">
-                      <div className="social-post"><span className="post-day">MON</span><div className="post-image p1" /><strong>New listing</strong><small>Instagram · Draft</small></div>
-                      <div className="social-post"><span className="post-day">WED</span><div className="post-image p2" /><strong>Market pulse</strong><small>LinkedIn · Approved</small></div>
-                      <div className="social-post"><span className="post-day">FRI</span><div className="post-image p3" /><strong>Agent insight</strong><small>Facebook · Review</small></div>
-                    </div>
-                    <div className="approval-bar"><span>Human approval required</span><button type="button">Review all</button></div>
+                    <video controls playsInline preload="metadata" poster="/videos/automated-marketing-poster.jpg" aria-label="HomeDash automated marketing workflow demonstration">
+                      <source src="/videos/automated-marketing.mp4" type="video/mp4" />
+                      Your browser does not support embedded video.
+                    </video>
+                    <span className="tool-video-label">Automated marketing</span>
+                    <span className="tool-video-duration">00:52</span>
                   </>
                 )}
               </div>
             </article>
           ))}
-        </div>
-      </section>
-
-      <section className="demo-section" id="demos">
-        <div className="demo-heading">
-          <div>
-            <p className="eyebrow">See the workflows in action</p>
-            <h2>Real product demos.<br />No slideware.</h2>
-          </div>
-          <p>Watch HomeDash turn listing assets into an agent-led property story and an always-on social marketing workflow.</p>
-        </div>
-
-        <div className="demo-grid">
-          <article className="demo-card">
-            <div className="demo-video-shell">
-              <video controls playsInline preload="metadata" poster="/videos/property-tour-poster.jpg" aria-label="HomeDash AI property tour demonstration">
-                <source src="/videos/property-tour-demo.mp4" type="video/mp4" />
-                Your browser does not support embedded video.
-              </video>
-              <span className="demo-duration">00:57</span>
-            </div>
-            <div className="demo-meta">
-              <span>01</span>
-              <div><p>AI property tour</p><h3>From property assets to an agent-led tour.</h3></div>
-            </div>
-          </article>
-
-          <article className="demo-card">
-            <div className="demo-video-shell">
-              <video controls playsInline preload="metadata" poster="/videos/post-creation-poster.jpg" aria-label="HomeDash automated social post creation demonstration">
-                <source src="/videos/automated-post-creation.mp4" type="video/mp4" />
-                Your browser does not support embedded video.
-              </video>
-              <span className="demo-duration">00:55</span>
-            </div>
-            <div className="demo-meta">
-              <span>02</span>
-              <div><p>Automated post creation</p><h3>Turn a content brief into a branded post.</h3></div>
-            </div>
-          </article>
-
-          <article className="demo-card">
-            <div className="demo-video-shell">
-              <video controls playsInline preload="metadata" poster="/videos/automated-marketing-poster.jpg" aria-label="HomeDash automated marketing workflow demonstration">
-                <source src="/videos/automated-marketing.mp4" type="video/mp4" />
-                Your browser does not support embedded video.
-              </video>
-              <span className="demo-duration">00:52</span>
-            </div>
-            <div className="demo-meta">
-              <span>03</span>
-              <div><p>Automated marketing</p><h3>Keep the campaign moving with human approval.</h3></div>
-            </div>
-          </article>
-        </div>
-
-        <div className="demo-cta">
-          <p><span className="live-dot" /> Three live workflows. One connected content engine.</p>
-          <a className="button button-small" href="#pilot">Discuss a pilot use case <span aria-hidden="true">↗</span></a>
         </div>
       </section>
 
