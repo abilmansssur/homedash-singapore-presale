@@ -36,6 +36,13 @@ test("server-renders the HomeDash Singapore presale page", async () => {
   assert.doesNotMatch(html, /LAND MASTER|伯樂行/i);
   assert.match(html, /30\+/i);
   assert.match(html, /912/);
+  assert.match(html, /168\.6K/);
+  assert.match(html, /GMA users over 36 days/i);
+  assert.match(html, /As Featured In/i);
+  assert.match(html, /HomeDash in 60 seconds/i);
+  assert.match(html, /\/homedash-product-story-60s\.mp4/i);
+  assert.match(html, /STOP and do-not-contact/i);
+  assert.match(html, /next best action/i);
   assert.match(html, /One week\. Unlimited videos/i);
   assert.match(html, /AutoPan/i);
   assert.match(html, /Classic Tour/i);
@@ -50,7 +57,8 @@ test("server-renders the HomeDash Singapore presale page", async () => {
   assert.match(html, /\/dashboard-listing-poster\.png/i);
   assert.match(html, /Singapore market pilot/i);
   assert.doesNotMatch(html, /A specific Singapore opening/i);
-  assert.match(html, /Book a 30-minute call/i);
+  assert.match(html, /Book a 20-minute call/i);
+  assert.doesNotMatch(html, /Book a 30-minute call/i);
   assert.match(html, /https:\/\/calendly\.com\/max-homedash\/30min/i);
   assert.match(html, /og\.png/i);
   assert.doesNotMatch(html, /codex-preview|Your site is taking shape|react-loading-skeleton/i);
