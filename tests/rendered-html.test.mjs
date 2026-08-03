@@ -48,6 +48,7 @@ test("server-renders the HomeDash Singapore presale page", async () => {
   assert.match(html, /\/dashboard-image-processing\.png/i);
   assert.match(html, /\/dashboard-listing-poster\.png/i);
   assert.match(html, /Singapore market pilot/i);
+  assert.doesNotMatch(html, /A specific Singapore opening/i);
   assert.match(html, /Book a 30-minute call/i);
   assert.match(html, /https:\/\/calendly\.com\/max-homedash\/30min/i);
   assert.match(html, /og\.png/i);

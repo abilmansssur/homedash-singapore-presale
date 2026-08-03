@@ -63,18 +63,6 @@ export default function Home() {
         </div>
       </section>
 
-      <section className="research-strip" aria-label="Singapore market research finding">
-        <p className="eyebrow">A specific Singapore opening</p>
-        <div>
-          <strong>5</strong>
-          <p>major portal and agency toolsets reviewed</p>
-        </div>
-        <div className="research-line" />
-        <p className="research-finding">
-          The reviewed tools cover distribution, analytics and lead workflows. <em>Fully automated static-image-to-video listing generation was not found.</em>
-        </p>
-      </section>
-
       <section className="adoption-section" aria-labelledby="adoption-title">
         <div className="adoption-heading">
           <div>
