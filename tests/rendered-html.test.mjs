@@ -23,6 +23,7 @@ test("server-renders the HomeDash Singapore presale page", async () => {
   const html = await response.text();
   assert.match(html, /<title>HomeDash Singapore \| AI Listing Studio Presale<\/title>/i);
   assert.match(html, /One listing/);
+  assert.match(html, /\/homedash-singapore-hero\.png/i);
   assert.match(html, /Static image → AI video/i);
   assert.match(html, /Agent-led AI property tour/i);
   assert.match(html, /Automated social marketing/i);

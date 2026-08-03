@@ -67,61 +67,24 @@ export default function Home() {
         <a className="button button-small" href="#pilot">Join the presale</a>
       </header>
 
-      <section className="hero" id="top">
-        <div className="hero-glow" aria-hidden="true" />
-        <div className="hero-copy">
-          <p className="eyebrow"><span className="pulse" /> Singapore market pilot · Presale 2026</p>
-          <h1>One listing.<br /><em>Three ways</em> to win attention.</h1>
-          <p className="hero-lede">
-            HomeDash turns property photos into listing videos, agent-led AI tours and approved social campaigns—without a production crew.
-          </p>
-          <div className="hero-actions">
-            <a className="button" href="#pilot">Request pilot access <span aria-hidden="true">↗</span></a>
-            <a className="text-link" href="#tools">Explore the AI listing studio <span aria-hidden="true">↓</span></a>
-          </div>
-          <p className="microcopy">Built for Singapore property agents, teams and agencies.</p>
+      <section className="hero hero-artwork-section" id="top" aria-labelledby="hero-title">
+        <img
+          className="hero-artwork"
+          src="/homedash-singapore-hero.png"
+          alt="HomeDash Singapore AI Listing Studio showing one property transformed into a listing video, an agent-avatar property tour and approved social media campaigns"
+          width="1735"
+          height="907"
+          fetchPriority="high"
+        />
+        <div className="hero-accessible-copy">
+          <p>Singapore market pilot · Presale 2026</p>
+          <h1 id="hero-title">One listing. Three ways to win attention.</h1>
         </div>
-
-        <div className="studio-shell" aria-label="Illustration of the HomeDash listing studio workflow">
-          <div className="studio-topbar">
-            <span className="studio-title"><span className="live-dot" /> Listing Studio</span>
-            <span className="studio-status">Draft saved</span>
-          </div>
-          <div className="studio-body">
-            <div className="source-card">
-              <div className="property-scene" role="img" aria-label="Stylised Singapore condominium listing photo">
-                <span className="building building-a" />
-                <span className="building building-b" />
-                <span className="building building-c" />
-                <span className="scene-label">NEW LISTING · D09</span>
-              </div>
-              <div className="source-meta">
-                <div><strong>Orchard residence</strong><span>3 bed · 2 bath · 1,184 sq ft</span></div>
-                <span className="ready">Ready</span>
-              </div>
-            </div>
-            <div className="flow-arrow" aria-hidden="true"><span>AI</span>→</div>
-            <div className="output-stack">
-              <div className="output-card active">
-                <span className="output-icon">▶</span>
-                <div><strong>Listing video</strong><small>9:16 · 38 sec</small></div>
-                <span className="check">✓</span>
-              </div>
-              <div className="output-card">
-                <span className="output-icon avatar-icon">A</span>
-                <div><strong>Agent-led tour</strong><small>Avatar + voice</small></div>
-                <span className="check">✓</span>
-              </div>
-              <div className="output-card">
-                <span className="output-icon social-icon">#</span>
-                <div><strong>Social campaign</strong><small>3 posts drafted</small></div>
-                <span className="review">Review</span>
-              </div>
-            </div>
-          </div>
-          <div className="studio-footer">
-            <span><i /> Photos imported</span><span><i /> Brand applied</span><span><i className="pending" /> Approval pending</span>
-          </div>
+        <div className="hero-mobile-copy">
+          <p className="eyebrow"><span className="pulse" /> Singapore market pilot · Presale 2026</p>
+          <h2>One listing.<br /><em>Three ways</em> to win attention.</h2>
+          <p>Turn property photos into listing videos, agent-led AI tours and approved social campaigns.</p>
+          <a className="button" href="#pilot">Request pilot access <span aria-hidden="true">↗</span></a>
         </div>
       </section>
 
