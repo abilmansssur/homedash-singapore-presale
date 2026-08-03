@@ -74,6 +74,29 @@ export default function Home() {
         </p>
       </section>
 
+      <section className="adoption-section" aria-labelledby="adoption-title">
+        <div className="adoption-heading">
+          <div>
+            <p className="eyebrow">Proven in Hong Kong · Ready to pilot in Singapore</p>
+            <h2 id="adoption-title">Already running inside real agency operations.</h2>
+          </div>
+          <p>HomeDash’s wider operating platform is trusted by established Hong Kong property agencies. The Singapore presale brings its newest listing-video, agent-avatar and marketing workflows to a focused local pilot.</p>
+        </div>
+        <div className="agency-list" aria-label="Hong Kong agencies named by HomeDash">
+          <div><strong>RICACORP PROPERTIES</strong><span>利嘉閣</span></div>
+          <div><strong>CENTURY 21</strong><span>世紀21</span></div>
+          <div><strong>GAMWAY PROPERTY</strong><span>金滙地產</span></div>
+          <div><strong>SUNRISE PROPERTY</strong><span>太陽物業</span></div>
+          <div><strong>LAND MASTER</strong><span>伯樂行</span></div>
+        </div>
+        <div className="adoption-stats">
+          <div><strong>30+</strong><span>paying agencies</span></div>
+          <div><strong>912</strong><span>agents in the latest snapshot</span></div>
+          <div><strong>24/7</strong><span>connected agency operations</span></div>
+          <p>HomeDash product snapshot, July 2026. <a href="https://homedash.ai/" target="_blank" rel="noreferrer">View official source ↗</a></p>
+        </div>
+      </section>
+
       <section className="tools-section" id="tools">
         <div className="section-heading">
           <div>
