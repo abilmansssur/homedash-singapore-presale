@@ -35,6 +35,7 @@ export default function Home() {
         </a>
         <nav aria-label="Primary navigation">
           <a href="#tools">Tools</a>
+          <a href="#workspace">Workspace</a>
           <a href="#workflow">How it works</a>
           <a href="#pilot">Singapore pilot</a>
         </nav>
@@ -152,6 +153,39 @@ export default function Home() {
               </div>
             </article>
           ))}
+        </div>
+      </section>
+
+      <section className="workspace-section" id="workspace" aria-labelledby="workspace-title">
+        <div className="workspace-heading">
+          <div>
+            <p className="eyebrow light">Inside the HomeDash workspace</p>
+            <h2 id="workspace-title">Real tools your team can put to work.</h2>
+          </div>
+          <p>Move from listing selection and image preparation to branded property content inside one practical workspace.</p>
+        </div>
+        <div className="workspace-gallery">
+          <figure className="workspace-card workspace-card-featured">
+            <a className="workspace-image" href="/dashboard-property-tour.png" target="_blank" rel="noreferrer" aria-label="Open the property tour builder screenshot at full size">
+              <img src="/dashboard-property-tour.png" alt="HomeDash property tour builder with listing selection, video templates and a three-step creation workflow" width="1620" height="837" loading="lazy" />
+              <span>View full size ↗</span>
+            </a>
+            <figcaption><span>01</span><div><h3>Property tour builder</h3><p>Select a listing and template, then prepare the script, voiceover and video through a guided workflow.</p></div></figcaption>
+          </figure>
+          <figure className="workspace-card">
+            <a className="workspace-image" href="/dashboard-image-processing.png" target="_blank" rel="noreferrer" aria-label="Open the image processing workspace screenshot at full size">
+              <img src="/dashboard-image-processing.png" alt="HomeDash image processing workspace with decluttering, furniture removal and watermark tools" width="1620" height="837" loading="lazy" />
+              <span>View full size ↗</span>
+            </a>
+            <figcaption><span>02</span><div><h3>Listing image preparation</h3><p>Declutter images, remove furniture or watermarks, and prepare clean source assets before content creation.</p></div></figcaption>
+          </figure>
+          <figure className="workspace-card">
+            <a className="workspace-image" href="/dashboard-listing-poster.png" target="_blank" rel="noreferrer" aria-label="Open the listing poster workspace screenshot at full size">
+              <img src="/dashboard-listing-poster.png" alt="HomeDash listing poster generator with agent identity, company branding and image upload controls" width="1622" height="841" loading="lazy" />
+              <span>View full size ↗</span>
+            </a>
+            <figcaption><span>03</span><div><h3>Branded listing posters</h3><p>Bring agent identity, company branding, listing images and campaign formats into one generation flow.</p></div></figcaption>
+          </figure>
         </div>
       </section>
 
