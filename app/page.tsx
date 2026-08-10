@@ -5,6 +5,9 @@ const tools = [
     title: "Turn listing photos into scroll-stopping motion.",
     copy: "Upload a set of property photos and HomeDash prepares a polished vertical listing video—camera movement, captions, transitions and voiceover included.",
     points: ["No filming day", "No editing timeline", "Reusable for listings, Reels and owner updates"],
+    input: "Property photos + listing details",
+    time: "≈ 5 minutes with ready photos",
+    bestFor: "Listings · Reels · Owner updates",
     visual: "video",
   },
   {
@@ -13,6 +16,9 @@ const tools = [
     title: "Put the agent back inside every property story.",
     copy: "Add one approved agent photo and a short voice sample. HomeDash creates an agent-avatar property tour that feels personal, consistent and ready for your brand review.",
     points: ["Agent avatar", "Branded voiceover", "Reusable format"],
+    input: "Property photos + one agent photo + a short voice note",
+    time: "≈ 5 minutes with ready assets",
+    bestFor: "Personal branding · Agent-led tours · Social video",
     visual: "avatar",
   },
   {
@@ -21,6 +27,9 @@ const tools = [
     title: "Keep your content calendar moving—with control.",
     copy: "Turn listings and local market signals into branded images, captions and campaign drafts. Your team approves customer-facing work before anything is published.",
     points: ["Local content research", "Brand-aware drafts", "Approved work moves into the content calendar"],
+    input: "Listing details + brand settings + local market signals",
+    time: "Minutes to a review-ready campaign draft",
+    bestFor: "Consistent campaigns · Content calendars · Reels",
     visual: "social",
   },
 ];
@@ -39,7 +48,7 @@ export default function Home() {
           <a href="#workflow">How it works</a>
           <a href="#pilot">Singapore pilot</a>
         </nav>
-        <a className="button button-small" href="#booking">Book a 20-minute call</a>
+        <a className="button button-small" href="#booking">Apply for the pilot</a>
       </header>
 
       <section className="hero hero-artwork-section" id="top" aria-labelledby="hero-title">
@@ -59,17 +68,30 @@ export default function Home() {
           <p className="eyebrow"><span className="pulse" /> Singapore market pilot · Presale 2026</p>
           <h2>One listing.<br /><em>Three ways</em> to win attention.</h2>
           <p>Turn property photos into listing videos, agent-led AI tours and approved social campaigns.</p>
-          <a className="button" href="#booking">Book a 20-minute call <span aria-hidden="true">↗</span></a>
+          <a className="button" href="#booking">Apply for the pilot <span aria-hidden="true">↗</span></a>
+        </div>
+      </section>
+
+      <section className="hero-pilot-strip" aria-label="Singapore pilot proof and actions">
+        <div className="hero-pilot-actions">
+          <a className="button" href="#booking">Apply for the Singapore pilot <span aria-hidden="true">↗</span></a>
+          <a className="text-link" href="#tools">Watch the three demos ↓</a>
+        </div>
+        <div className="hero-proof-list">
+          <span><strong>7 days</strong> unlimited generation</span>
+          <span><strong>≈ 5 min</strong> from ready photos</span>
+          <span><strong>3 formats</strong> AutoPan, Classic Tour, Social Video</span>
+          <span><strong>Rolling</strong> applications</span>
         </div>
       </section>
 
       <section className="press-section" aria-labelledby="press-title">
         <p className="eyebrow" id="press-title">As Featured In</p>
         <div className="press-logos" aria-label="Media publications featuring HomeDash">
-          <div className="press-logo press-logo-hkej"><strong>信報財經新聞</strong><span>HKEJ</span></div>
-          <div className="press-logo press-logo-am730"><strong>am<span>730</span></strong><small>am730.com.hk</small></div>
-          <div className="press-logo press-logo-etnet"><strong>經濟通 <span>et</span>net</strong><small>etnet.com.hk</small></div>
-          <div className="press-logo press-logo-itpro"><strong>IT PRO</strong><small>Enhance Your Business</small></div>
+          <a className="press-logo press-logo-hkej" href="https://www.hkej.com/dailynews/ceoai/article/4016842/" target="_blank" rel="noreferrer" aria-label="Read the HKEJ coverage"><strong>信報財經新聞</strong><span>HKEJ · Read article ↗</span></a>
+          <a className="press-logo press-logo-am730" href="https://www.am730.com.hk/column/%2A/556598" target="_blank" rel="noreferrer" aria-label="Read the am730 coverage"><strong>am<span>730</span></strong><small>Read article ↗</small></a>
+          <a className="press-logo press-logo-etnet" href="https://www.etnet.com.hk/www/tc/news/mediaoutreach_news_detail.php?newsid=365787" target="_blank" rel="noreferrer" aria-label="Read the etnet coverage"><strong>經濟通 <span>et</span>net</strong><small>Read article ↗</small></a>
+          <a className="press-logo press-logo-itpro" href="https://itpromag.com/2024/12/13/mooneybird/" target="_blank" rel="noreferrer" aria-label="Read the IT PRO coverage"><strong>IT PRO</strong><small>Read article ↗</small></a>
         </div>
       </section>
 
@@ -90,7 +112,6 @@ export default function Home() {
         <div className="adoption-stats">
           <div><strong>30+</strong><span>paying agencies</span></div>
           <div><strong>912</strong><span>agents in the latest snapshot</span></div>
-          <div><strong>168.6K</strong><span>GMA users over 36 days</span></div>
           <div><strong>24/7</strong><span>connected agency operations</span></div>
           <p>HomeDash product snapshot, July 2026. <a href="https://homedash.ai/" target="_blank" rel="noreferrer">View official source ↗</a></p>
         </div>
@@ -102,7 +123,7 @@ export default function Home() {
             <p className="eyebrow">The AI listing studio</p>
             <h2>Create once.<br />Show up everywhere.</h2>
           </div>
-          <p>Three connected tools turn the assets you already have into a consistent, always-on content engine.</p>
+          <p>These are the three workflows included in the one-week Singapore pilot—nothing hidden behind “coming soon”.</p>
         </div>
 
         <div className="tool-list">
@@ -116,6 +137,12 @@ export default function Home() {
                 <ul>
                   {tool.points.map((point) => <li key={point}><span>✓</span>{point}</li>)}
                 </ul>
+                <dl className="tool-meta">
+                  <div><dt>Input</dt><dd>{tool.input}</dd></div>
+                  <div><dt>Time</dt><dd>{tool.time}</dd></div>
+                  <div><dt>Best for</dt><dd>{tool.bestFor}</dd></div>
+                </dl>
+                <a className="tool-cta" href="#booking">Pilot this workflow <span aria-hidden="true">↗</span></a>
               </div>
               <div className={`tool-visual tool-video ${tool.visual}`}>
                 {tool.visual === "video" && (
@@ -151,6 +178,34 @@ export default function Home() {
               </div>
             </article>
           ))}
+        </div>
+      </section>
+
+      <section className="scope-section" aria-labelledby="scope-title">
+        <div className="scope-heading">
+          <p className="eyebrow">Clear pilot scope</p>
+          <h2 id="scope-title">Start with content creation.<br />Expand only when it proves useful.</h2>
+        </div>
+        <div className="scope-columns">
+          <article className="scope-card scope-card-included">
+            <span>Included in your one-week pilot</span>
+            <h3>The AI Listing Studio</h3>
+            <ul>
+              <li>Unlimited AutoPan, Classic Tour and Social Video generation</li>
+              <li>Agent-avatar setup from one photo and a short voice note</li>
+              <li>Automated social campaign drafts and approval-ready content</li>
+            </ul>
+          </article>
+          <article className="scope-card">
+            <span>Part of the wider HomeDash platform</span>
+            <h3>Agency operating workflows</h3>
+            <ul>
+              <li>Shared customer and listing context across modules</li>
+              <li>Lead follow-up, reports and next-best-action preparation</li>
+              <li>Branch visibility, coordination and controlled automation</li>
+            </ul>
+            <a href="https://homedash.ai/" target="_blank" rel="noreferrer">Explore the wider platform ↗</a>
+          </article>
         </div>
       </section>
 
@@ -191,11 +246,11 @@ export default function Home() {
         <div className="platform-story-copy">
           <p className="eyebrow light">See the wider system</p>
           <h2 id="platform-story-title">HomeDash in 60 seconds.</h2>
-          <p>From consented conversations to visible agent action. See how customer signals, listings, content and follow-up stay connected beyond the three pilot tools.</p>
+          <p>This broader operating layer is not part of the one-week content pilot. See how HomeDash can connect listings, content, leads and branch operations when an agency is ready to expand.</p>
           <ul>
             <li>Shared customer and listing context across modules</li>
-            <li>One operating layer for market signals and WhatsApp replies</li>
-            <li>AI-prepared reports, lead context and next best action</li>
+            <li>Lead follow-up, reports and next-best-action preparation</li>
+            <li>Branch visibility and controlled automation</li>
           </ul>
         </div>
         <figure className="platform-story-video">
@@ -209,36 +264,16 @@ export default function Home() {
 
       <section className="workflow-section" id="workflow">
         <div className="workflow-heading">
-          <p className="eyebrow">One connected content loop</p>
-          <h2>Automation with a visible decision boundary.</h2>
-          <p>Move quickly where AI helps. Keep shared customer and listing context visible, with a person in control where your reputation matters.</p>
+          <p className="eyebrow">Your one-week pilot workflow</p>
+          <h2>From listing photos to approved content.</h2>
+          <p>Use one live listing to test speed, quality and brand fit. Your team keeps the publishing decision.</p>
         </div>
         <ol className="workflow-steps">
-          <li><span>01</span><strong>Capture</strong><p>Market signals, listings and WhatsApp replies enter the same operating layer.</p></li>
-          <li><span>02</span><strong>Prepare</strong><p>AI prepares content, reports, lead context and the next best action.</p></li>
+          <li><span>01</span><strong>Provide</strong><p>Add listing photos, property details and your preferred format.</p></li>
+          <li><span>02</span><strong>Generate</strong><p>HomeDash prepares the video, captions, voiceover and campaign draft.</p></li>
           <li><span>03</span><strong>Approve</strong><p>Your team reviews customer-facing content before it goes live.</p></li>
-          <li><span>04</span><strong>Operate</strong><p>Every conversation, asset and follow-up remains traceable for the team.</p></li>
+          <li><span>04</span><strong>Reuse</strong><p>Move approved assets into listings, Reels, owner updates and your content calendar.</p></li>
         </ol>
-        <div className="control-grid" aria-label="HomeDash human control safeguards">
-          <article><span>01</span><h3>Respect every stop signal.</h3><p>STOP and do-not-contact requests suppress further outreach.</p></article>
-          <article><span>02</span><h3>Keep the history visible.</h3><p>Conversation and action history shows what happened, what was sent and what comes next.</p></article>
-          <article><span>03</span><h3>Gate narrow automation.</h3><p>Automate approved requests, such as a transaction PDF, while general customer replies remain reviewable.</p></article>
-        </div>
-      </section>
-
-      <section className="difference-section">
-        <div className="difference-copy">
-          <p className="eyebrow">Built for the gap between listing and attention</p>
-          <h2>Your portal helps people find the listing.<br /><em>HomeDash helps them feel it.</em></h2>
-        </div>
-        <div className="comparison">
-          <div className="comparison-row comparison-head"><span>Workflow</span><span>Typical listing stack</span><span>HomeDash studio</span></div>
-          <div className="comparison-row"><span>Publish listing data</span><span className="yes">✓</span><span className="yes">✓</span></div>
-          <div className="comparison-row"><span>Create video from photos</span><span className="no">—</span><span className="highlight">Automated</span></div>
-          <div className="comparison-row"><span>Add the agent on-screen</span><span className="no">—</span><span className="highlight">Agent avatar</span></div>
-          <div className="comparison-row"><span>Prepare ongoing social content</span><span>Separate tools</span><span className="highlight">One workflow</span></div>
-          <div className="comparison-row"><span>Approval before publishing</span><span>Varies</span><span className="highlight">Built in</span></div>
-        </div>
       </section>
 
       <section className="pilot-package-section" aria-labelledby="pilot-package-title">
@@ -266,11 +301,32 @@ export default function Home() {
         </div>
       </section>
 
+      <section className="audience-section" aria-labelledby="audience-title">
+        <div>
+          <p className="eyebrow">Choose your pilot path</p>
+          <h2 id="audience-title">A focused next step for how you work.</h2>
+        </div>
+        <div className="audience-paths">
+          <article>
+            <span>For individual agents</span>
+            <h3>Turn one live listing into a week of usable content.</h3>
+            <p>Bring your photos and brand preferences. Test all three formats without a filming day or editing timeline.</p>
+            <a className="button" href="#booking">Pilot as an agent <span aria-hidden="true">↗</span></a>
+          </article>
+          <article>
+            <span>For team leaders</span>
+            <h3>Test a repeatable approval workflow with your team.</h3>
+            <p>Choose a listing, an agent identity and a reviewer. Measure turnaround, consistency and reuse before a wider rollout.</p>
+            <a className="button button-dark" href="#booking">Plan a team pilot <span aria-hidden="true">↗</span></a>
+          </article>
+        </div>
+      </section>
+
       <section className="pilot-section" id="pilot">
         <div className="pilot-copy">
           <p className="eyebrow light">Singapore market pilot · Limited intake</p>
           <h2>Bring one live listing bottleneck.<br />Leave with a practical pilot plan.</h2>
-          <p>In a focused 20-minute call, we’ll map your workflow, approval points and what a useful first result should look like.</p>
+          <p>In a focused pilot consultation, we’ll map your workflow, approval points and what a useful first result should look like.</p>
           <ul className="pilot-benefits">
             <li><span>01</span><div><strong>Singapore-ready workflow</strong><p>Localised around your listing, brand and team structure.</p></div></li>
             <li><span>02</span><div><strong>Early product influence</strong><p>Help shape the templates and controls your team needs.</p></div></li>
@@ -279,7 +335,7 @@ export default function Home() {
         </div>
         <div className="booking-panel" id="booking">
           <div className="booking-head">
-            <div><span>BOOK YOUR PILOT CONSULTATION</span><strong>Singapore · 20-minute discussion</strong></div>
+            <div><span>BOOK YOUR PILOT CONSULTATION</span><strong>Singapore · pilot planning call</strong></div>
             <p>Select an available time without leaving the page.</p>
           </div>
           <iframe
@@ -289,7 +345,7 @@ export default function Home() {
             loading="lazy"
           />
           <div className="booking-fallback">
-            <span>The current calendar reserves up to 30 minutes; the pilot discussion is designed for 20. Prefer another channel?</span>
+            <span>The available HomeDash calendar currently reserves 30 minutes. Prefer another channel?</span>
             <a href="https://wa.me/85293173883" target="_blank" rel="noreferrer">Discuss your use case on WhatsApp ↗</a>
           </div>
         </div>
