@@ -84,16 +84,6 @@ export default function Home() {
         </div>
       </section>
 
-      <section className="press-section" aria-labelledby="press-title">
-        <p className="eyebrow" id="press-title">As Featured In</p>
-        <div className="press-logos" aria-label="Media publications featuring HomeDash">
-          <a className="press-logo press-logo-hkej" href="https://www.hkej.com/dailynews/ceoai/article/4016842/" target="_blank" rel="noreferrer" aria-label="Read the HKEJ coverage"><strong>信報財經新聞</strong><span>HKEJ · Read article ↗</span></a>
-          <a className="press-logo press-logo-am730" href="https://www.am730.com.hk/column/%2A/556598" target="_blank" rel="noreferrer" aria-label="Read the am730 coverage"><strong>am<span>730</span></strong><small>Read article ↗</small></a>
-          <a className="press-logo press-logo-etnet" href="https://www.etnet.com.hk/www/tc/news/mediaoutreach_news_detail.php?newsid=365787" target="_blank" rel="noreferrer" aria-label="Read the etnet coverage"><strong>經濟通 <span>et</span>net</strong><small>Read article ↗</small></a>
-          <a className="press-logo press-logo-itpro" href="https://itpromag.com/2024/12/13/mooneybird/" target="_blank" rel="noreferrer" aria-label="Read the IT PRO coverage"><strong>IT PRO</strong><small>Read article ↗</small></a>
-        </div>
-      </section>
-
       <section className="adoption-section" aria-labelledby="adoption-title">
         <div className="adoption-heading">
           <div>
