@@ -39,13 +39,13 @@ export default function Home() {
     <main>
       <header className="site-header">
         <a className="brand" href="#top" aria-label="HomeDash Singapore home">
-          <span className="brand-mark">H</span>
-          <span>HomeDash<span className="brand-dot">.ai</span></span>
+          <img className="brand-logo" src="/homedash-logo.png" alt="HomeDash" width="476" height="186" />
         </a>
-        <nav className="role-nav" aria-label="Choose your HomeDash path">
-          <a href="#agent-pilot">For agents</a>
-          <a href="#team-pilot">For team leaders</a>
-          <a href="#tools">Watch demos</a>
+        <nav aria-label="Primary navigation">
+          <a href="#top">Home</a>
+          <a href="#tools">Features</a>
+          <a href="#workflow">How it works</a>
+          <a href="#faq">FAQ</a>
         </nav>
         <a className="button button-small" href="#booking">Join the agent pilot</a>
       </header>
@@ -350,20 +350,38 @@ export default function Home() {
         </div>
       </section>
 
-      <section className="faq-section">
-        <div><p className="eyebrow">Questions, answered</p><h2>Before you join the pilot.</h2></div>
-        <div className="faq-list">
-          <details><summary>Do agents need to film the property?</summary><p>No. The static-image-to-video workflow starts from property photos and listing details. HomeDash prepares the motion, captions and voiceover for review.</p></details>
-          <details><summary>How many videos can I generate during the pilot?</summary><p>There is no video-generation cap during your one-week pilot. You can test AutoPan, Classic Tour and Social Video across as many suitable listings as you need.</p></details>
-          <details><summary>How quickly can a video be produced?</summary><p>When the property photos are already available, the HomeDash workflow reduces production time to approximately five minutes.</p></details>
-          <details><summary>What is needed for an agent-avatar Social Video?</summary><p>One approved agent picture and a short voice note, plus your listing assets and brand preferences. Your team reviews the result before use.</p></details>
-          <details><summary>Will social posts publish automatically?</summary><p>HomeDash prepares campaign drafts and a content queue. Customer-facing content is routed through human approval before publishing.</p></details>
-          <details><summary>Is HomeDash already available in Singapore?</summary><p>HomeDash is recruiting Singapore market-pilot agencies. The presale call is used to identify a focused use case, approval process and useful pilot result.</p></details>
+      <section className="faq-section" id="faq" aria-labelledby="faq-title">
+        <div className="faq-heading"><p className="eyebrow">Questions, answered</p><h2 id="faq-title">Before you join the pilot.</h2><p>Browse the practical details by topic—from pilot access to video creation and publishing control.</p></div>
+        <div className="faq-groups">
+          <article className="faq-group">
+            <div className="faq-category"><span>01</span><h3>Pilot access</h3></div>
+            <div className="faq-list">
+              <details><summary>What is included in the one-week pilot?</summary><p>Unlimited generation across AutoPan, Classic Tour and Social Video, plus agent-avatar setup and approval-ready social campaign drafts.</p></details>
+              <details><summary>How many videos can I generate?</summary><p>There is no video-generation cap during your pilot week. You can test the three formats across as many suitable listings as you need.</p></details>
+              <details><summary>Is there an application deadline?</summary><p>No fixed deadline. Applications are reviewed on a rolling basis and pilots begin when a suitable slot is available.</p></details>
+            </div>
+          </article>
+          <article className="faq-group">
+            <div className="faq-category"><span>02</span><h3>Video creation</h3></div>
+            <div className="faq-list">
+              <details><summary>Do agents need to film the property?</summary><p>No. HomeDash starts from property photos and listing details, then prepares motion, captions and voiceover for review.</p></details>
+              <details><summary>How quickly can a video be produced?</summary><p>When property photos are ready, the HomeDash workflow can reduce production time to approximately five minutes.</p></details>
+              <details><summary>What is needed for an agent-avatar video?</summary><p>One approved agent picture and a short voice note, together with the listing assets and brand preferences.</p></details>
+            </div>
+          </article>
+          <article className="faq-group">
+            <div className="faq-category"><span>03</span><h3>Publishing and control</h3></div>
+            <div className="faq-list">
+              <details><summary>Will social posts publish automatically?</summary><p>HomeDash prepares campaign drafts and a content queue. Customer-facing content is routed through human approval before publishing.</p></details>
+              <details><summary>Where can generated videos be reused?</summary><p>Approved videos can be reused for property listings, social Reels, owner updates and planned content calendars.</p></details>
+              <details><summary>Can a team leader test the workflow?</summary><p>Yes. Team pilots can test agent identity, reviewer roles, turnaround and brand consistency before considering a wider rollout.</p></details>
+            </div>
+          </article>
         </div>
       </section>
 
       <footer>
-        <a className="brand footer-brand" href="#top"><span className="brand-mark">H</span><span>HomeDash<span className="brand-dot">.ai</span></span></a>
+        <a className="brand footer-brand" href="#top" aria-label="HomeDash Singapore home"><img className="brand-logo" src="/homedash-logo.png" alt="HomeDash" width="476" height="186" /></a>
         <p>AI operating systems for real estate agencies.</p>
         <div><a href="https://homedash.ai/" target="_blank" rel="noreferrer">Global site ↗</a><a href="mailto:info@homedash.hk">Contact</a><a href="#top">Back to top ↑</a></div>
         <span>© 2026 HomeDash.ai</span>
