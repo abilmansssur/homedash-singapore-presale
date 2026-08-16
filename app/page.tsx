@@ -46,7 +46,6 @@ export default function Home() {
           <a href="#tools">Tools</a>
           <a href="#workspace">Workspace</a>
           <a href="#workflow">How it works</a>
-          <a href="#pilot">Singapore pilot</a>
         </nav>
         <a className="button button-small" href="#booking">Apply for the pilot</a>
       </header>
