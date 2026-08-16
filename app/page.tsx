@@ -42,12 +42,12 @@ export default function Home() {
           <span className="brand-mark">H</span>
           <span>HomeDash<span className="brand-dot">.ai</span></span>
         </a>
-        <nav aria-label="Primary navigation">
-          <a href="#tools">Tools</a>
-          <a href="#workspace">Workspace</a>
-          <a href="#workflow">How it works</a>
+        <nav className="role-nav" aria-label="Choose your HomeDash path">
+          <a href="#agent-pilot">For agents</a>
+          <a href="#team-pilot">For team leaders</a>
+          <a href="#tools">Watch demos</a>
         </nav>
-        <a className="button button-small" href="#booking">Apply for the pilot</a>
+        <a className="button button-small" href="#booking">Join the agent pilot</a>
       </header>
 
       <section className="hero hero-artwork-section" id="top" aria-labelledby="hero-title">
@@ -67,13 +67,13 @@ export default function Home() {
           <p className="eyebrow"><span className="pulse" /> Singapore market pilot · Presale 2026</p>
           <h2>One listing.<br /><em>Three ways</em> to win attention.</h2>
           <p>Turn property photos into listing videos, agent-led AI tours and approved social campaigns.</p>
-          <a className="button" href="#booking">Apply for the pilot <span aria-hidden="true">↗</span></a>
+          <a className="button" href="#booking">Join the agent pilot <span aria-hidden="true">↗</span></a>
         </div>
       </section>
 
       <section className="hero-pilot-strip" aria-label="Singapore pilot proof and actions">
         <div className="hero-pilot-actions">
-          <a className="button" href="#booking">Apply for the Singapore pilot <span aria-hidden="true">↗</span></a>
+          <a className="button" href="#booking">Join the agent pilot <span aria-hidden="true">↗</span></a>
           <a className="text-link" href="#tools">Watch the three demos ↓</a>
         </div>
         <div className="hero-proof-list">
@@ -141,7 +141,7 @@ export default function Home() {
                   <div><dt>Time</dt><dd>{tool.time}</dd></div>
                   <div><dt>Best for</dt><dd>{tool.bestFor}</dd></div>
                 </dl>
-                <a className="tool-cta" href="#booking">Pilot this workflow <span aria-hidden="true">↗</span></a>
+                <a className="tool-cta" href="#booking">Join the agent pilot <span aria-hidden="true">↗</span></a>
               </div>
               <div className={`tool-visual tool-video ${tool.visual}`}>
                 {tool.visual === "video" && (
@@ -296,7 +296,7 @@ export default function Home() {
         </div>
         <div className="pilot-package-cta">
           <p>No fixed application deadline. Start when there is a suitable pilot slot.</p>
-          <a className="button" href="#booking">Book your pilot consultation <span aria-hidden="true">↗</span></a>
+          <a className="button" href="#booking">Join the agent pilot <span aria-hidden="true">↗</span></a>
         </div>
       </section>
 
@@ -306,17 +306,17 @@ export default function Home() {
           <h2 id="audience-title">A focused next step for how you work.</h2>
         </div>
         <div className="audience-paths">
-          <article>
-            <span>For individual agents</span>
-            <h3>Turn one live listing into a week of usable content.</h3>
+          <article className="audience-path-primary" id="agent-pilot">
+            <span>Primary path · For individual agents</span>
+            <h3>Join the Singapore agent pilot.</h3>
             <p>Bring your photos and brand preferences. Test all three formats without a filming day or editing timeline.</p>
-            <a className="button" href="#booking">Pilot as an agent <span aria-hidden="true">↗</span></a>
+            <a className="button" href="#booking">Join the agent pilot <span aria-hidden="true">↗</span></a>
           </article>
-          <article>
+          <article id="team-pilot">
             <span>For team leaders</span>
             <h3>Test a repeatable approval workflow with your team.</h3>
             <p>Choose a listing, an agent identity and a reviewer. Measure turnaround, consistency and reuse before a wider rollout.</p>
-            <a className="button button-dark" href="#booking">Plan a team pilot <span aria-hidden="true">↗</span></a>
+            <a className="audience-secondary-link" href="#booking">Discuss a team pilot <span aria-hidden="true">→</span></a>
           </article>
         </div>
       </section>
@@ -334,7 +334,7 @@ export default function Home() {
         </div>
         <div className="booking-panel" id="booking">
           <div className="booking-head">
-            <div><span>BOOK YOUR PILOT CONSULTATION</span><strong>Singapore · pilot planning call</strong></div>
+            <div><span>JOIN THE SINGAPORE AGENT PILOT</span><strong>Singapore · pilot planning call</strong></div>
             <p>Select an available time without leaving the page.</p>
           </div>
           <iframe
