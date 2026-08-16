@@ -318,7 +318,6 @@ export default function Home() {
           <article><strong><b>≈5</b> min</strong><p>from ready property photos</p></article>
           <article><strong><b>3</b> formats</strong><p>Photo Motion, Classic Tour, Social Video</p></article>
         </div>
-        <p className="pilot-avatar-note"><strong>Agent-avatar Social Video:</strong> provide one approved agent photo and a short voice note to appear in your videos.</p>
         <div className="pilot-formats" aria-label="Video formats included in the HomeDash pilot">
           <div><span>01</span><strong>Photo Motion Video</strong><p>Add smooth motion to static property photos.</p></div>
           <div><span>02</span><strong>Classic Tour</strong><p>Turn listing images into a guided property story.</p></div>
