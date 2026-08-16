@@ -106,6 +106,26 @@ export default function Home() {
         </div>
       </section>
 
+      <section className="review-section" aria-labelledby="review-title">
+        <div className="review-heading">
+          <p className="eyebrow light">Verified public review</p>
+          <h2 id="review-title">Early feedback from HomeDash Hong Kong.</h2>
+          <p>This review is shown with its original wording, an English translation and a direct public source.</p>
+        </div>
+        <figure className="review-card">
+          <div className="review-stars" aria-label="5 out of 5 stars">★★★★★</div>
+          <blockquote>
+            <span lang="zh-Hant">“好用，直接在平台上對話”</span>
+            <em>“Easy to use; you can chat directly on the platform.”</em>
+          </blockquote>
+          <figcaption>
+            <div><strong>葵興深情</strong><span>HomeDash Hong Kong app user</span></div>
+            <a href="https://apps.apple.com/hk/app/homedash-%E5%AE%B6%E9%80%9F/id6754503144" target="_blank" rel="noreferrer">View on the Apple App Store ↗</a>
+          </figcaption>
+          <p className="review-context">Consumer review of the Hong Kong property-search app; not a Singapore pilot or agency-workflow testimonial.</p>
+        </figure>
+      </section>
+
       <section className="tools-section" id="tools">
         <div className="section-heading">
           <div>
