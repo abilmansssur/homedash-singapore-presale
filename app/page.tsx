@@ -69,20 +69,39 @@ export default function Home() {
           <p className="eyebrow">HomeDash Singapore · Presale 2026</p>
           <h1 id="hero-title">Turn one listing into <em>a week of marketing.</em></h1>
           <p className="hero-lede">Create listing videos, agent-led property tours and ready-to-publish social content from property photos.</p>
+          <div className="hero-proof-list hero-proof-inline" aria-label="Singapore pilot package highlights">
+            <span><strong><b>7</b> days</strong><small>unlimited video generation</small></span>
+            <span><strong><b>≈5</b> min</strong><small>from ready property photos</small></span>
+            <span><strong><b>3</b> formats</strong><small>Photo Motion Video, Classic Tour, Social Video</small></span>
+          </div>
           <div className="hero-actions">
             <a className="button" href="#booking">Join the agent pilot <span aria-hidden="true">↗</span></a>
             <a className="hero-demo-link" href="#tools">Watch the three demos <span aria-hidden="true">↓</span></a>
           </div>
-          <p className="hero-microcopy">Rolling applications · No credit card · Agent and team pathways</p>
         </div>
       </section>
 
-      <section className="hero-pilot-strip" aria-label="Singapore pilot package highlights">
-        <div className="hero-proof-list">
-          <span><strong><b>7</b> days</strong><small>unlimited video generation</small></span>
-          <span><strong><b>≈5</b> min</strong><small>from ready property photos</small></span>
-          <span><strong><b>3</b> formats</strong><small>Photo Motion, Classic Tour, Social Video</small></span>
+      <section className="studio-preview" id="tools" aria-labelledby="studio-preview-title">
+        <div className="studio-preview-intro">
+          <p className="eyebrow">AI Listing Studio</p>
+          <h2 id="studio-preview-title">One workflow.<br /><em>Three</em> high-impact outputs.</h2>
+          <p>From ready property photos to polished, publish-ready content in minutes.</p>
         </div>
+        <a className="studio-preview-card" href="#workflows" aria-label="View the Photo Motion Video workflow">
+          <span className="preview-card-title"><b>01</b> Photo Motion Video</span>
+          <span className="preview-image preview-image-motion"><img src="/homedash-singapore-hero.png" alt="Photo Motion Video property preview" width="1735" height="907" /></span>
+          <strong>Cinematic property highlight with smooth motion.</strong>
+        </a>
+        <a className="studio-preview-card" href="#workflows" aria-label="View the Classic Tour workflow">
+          <span className="preview-card-title"><b>02</b> Classic Tour</span>
+          <span className="preview-image preview-image-tour"><img src="/videos/property-tour-poster.jpg" alt="Agent-led Classic Tour preview" width="480" height="854" /></span>
+          <strong>Agent-led tour with avatar and natural voice.</strong>
+        </a>
+        <a className="studio-preview-card" href="#workflows" aria-label="View the Social Video workflow">
+          <span className="preview-card-title"><b>03</b> Social Video</span>
+          <span className="preview-image preview-image-social"><img src="/homedash-singapore-hero.png" alt="Social Video property preview" width="1735" height="907" /></span>
+          <strong>Short, attention-grabbing clips for every platform.</strong>
+        </a>
       </section>
 
       <section className="adoption-section" aria-labelledby="adoption-title">
@@ -127,7 +146,7 @@ export default function Home() {
         </figure>
       </section>
 
-      <section className="tools-section" id="tools">
+      <section className="tools-section" id="workflows">
         <div className="section-heading">
           <div>
             <p className="eyebrow">The AI listing studio</p>

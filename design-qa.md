@@ -1,63 +1,60 @@
-# HomeDash Singapore redesign QA
+# HomeDash Singapore exact-styling QA
 
 ## Evidence
 
-- Source visual truth: `C:\Users\user\Documents\HomeDash Singapore\design-reference-dmark\selected-option-1.png`
-- Rendered implementation: `C:\Users\user\Documents\HomeDash Singapore\design-reference-dmark\implementation-desktop-final.png`
-- Responsive implementation: `C:\Users\user\Documents\HomeDash Singapore\design-reference-dmark\implementation-mobile-final.png`
-- Combined comparison: `C:\Users\user\Documents\HomeDash Singapore\design-reference-dmark\qa-side-by-side-final.png`
-- Desktop viewport: 1440 × 1024 CSS px, device scale factor 1
-- Source pixels: 1536 × 1024; normalized to 1440 × 960 on a 1440 × 1024 white comparison canvas
-- Implementation pixels: 1440 × 1024
-- Mobile viewport and pixels: 390 × 844, device scale factor 1
-- State: public landing page, initial hero state, no modal or expanded FAQ
+- Source visual truth: `C:\Users\user\.codex\generated_images\019fc53f-955f-70f0-ac33-b66a386940f8\exec-12786351-84b8-450c-b0e6-bf60d9b0c233.png`
+- Rendered implementation: `C:\Users\user\Documents\HomeDash Singapore\design-reference-dmark\implementation-exact-final.png`
+- Responsive implementation: `C:\Users\user\Documents\HomeDash Singapore\design-reference-dmark\implementation-exact-mobile.png`
+- Combined comparison: `C:\Users\user\Documents\HomeDash Singapore\design-reference-dmark\qa-exact-side-by-side.png`
+- Desktop viewport and source: 1536 × 1024 CSS px, device scale factor 1
+- Mobile viewport: 390 × 844 CSS px, device scale factor 1
+- State: initial landing-page state, no modal or expanded FAQ
 
 ## Full-view comparison
 
-The selected design and implementation now share the same primary hierarchy: floating white navigation, asymmetric property visual and oversized headline, orange conversion CTA, three-part rounded pilot metric strip, and immediate transition to a navy AI Listing Studio section. The implementation uses the supplied HomeDash logo and existing HomeDash Singapore hero artwork instead of the concept-only generated assets; this is an intentional brand-fidelity choice.
+The implementation matches the reference composition: an 82px white header, a 660px white hero with a 600 × 450 rounded visual on the left, a dense conversion block on the right, an inline three-part metric pill, a centered orange CTA, and an immediate transition into a 342px navy AI Listing Studio preview with three equal cards.
 
-The user-provided pilot-package reference is implemented as a wider full-row metric pill rather than the smaller right-column pill in the concept. This is intentional because the attached package reference was an explicit requirement and remains visually consistent with the selected direction.
+The supplied bilingual HomeDash logo and actual HomeDash product media replace the concept-only generic lockup and generated property imagery. Their placement, scale, crop, radii and surrounding whitespace follow the reference while preserving brand and product fidelity.
 
 ## Focused-region comparison
 
-The hero and pilot strip were examined at full 1440px resolution in the combined comparison. A separate crop was not needed because the relevant typography, image crop, CTA, metric labels, radii and spacing are legible at that resolution. The mobile capture was inspected independently for sticky-navigation fit, headline wrapping, image crop and CTA visibility.
+The hero-to-studio boundary was reviewed at native 1536 × 1024 resolution in the combined comparison. The final hero image occupies approximately y=109–559 versus y=110–560 in the source. The navy studio boundary begins at approximately y=654 versus y=660 in the source, a six-pixel difference with no hierarchy or rhythm impact. The mobile capture was reviewed separately for navigation wrapping, headline scale, media crop, metric stacking, CTA visibility and horizontal overflow.
 
 ## Required fidelity surfaces
 
-- Fonts and typography: Inter remains the established HomeDash primary font. Weight, scale and line-height reproduce the selected heavy editorial hierarchy; the small eyebrow and navigation retain readable optical weight.
-- Spacing and layout rhythm: hero columns, rounded visual, floating navigation, CTA spacing and three-column metric strip align cleanly at desktop. Mobile stacks without horizontal overflow and keeps the primary CTA visible.
-- Colors and tokens: bright orange conversion actions, white canvas, deep HomeDash navy and cyan micro-accents match the selected direction while preserving the brand palette.
-- Image quality and asset fidelity: the supplied high-resolution HomeDash hero and logo are used directly. The final crop removes the old embedded headline and keeps the Singapore property, three outputs and social channel context in focus.
-- Copy and content: the hero, metrics and pilot package use the approved HomeDash claims. `AutoPan` has been replaced everywhere by `Photo Motion Video`.
+- Fonts and typography: the established HomeDash primary font is retained; the large black/orange headline, compact navigation, metric hierarchy and white studio typography reproduce the reference's editorial contrast.
+- Spacing and layout rhythm: header, hero columns, visual height, copy start, metric pill, CTA and studio-card geometry follow the source proportions. Responsive layouts stack cleanly.
+- Colors and tokens: white canvas, HomeDash navy, bright orange action color, cyan accent and muted slate supporting copy match the reference palette.
+- Image quality and asset fidelity: the supplied logo, HomeDash Singapore hero artwork and real property-tour imagery are used directly. Cropping avoids exposing the old embedded headline.
+- Copy and content: approved pilot terms and the user-friendly `Photo Motion Video` name remain intact. Detailed workflow content continues below the exact opening composition.
 
 ## Comparison history
 
 ### Iteration 1
 
-- [P1] Hero headline wrapped into four lines because the highlighted phrase was forced to a block.
-- [P2] Hero image crop exposed fragments of the old embedded headline.
-- Fixes: made the highlighted phrase inline, reduced the display scale slightly and moved the source crop to the right edge.
-- Post-fix evidence: `implementation-desktop-final.png` shows the intended three-line headline and a clean product-only crop.
+- [P1] The pilot metrics originally sat below the hero, pushing the studio too far down.
+- [P2] The hero crop exposed part of the older embedded headline.
+- [P2] The studio intro and cards were taller than the reference.
+- Fixes: moved the metrics into the right hero column, scaled and right-aligned the real hero asset, added the immediate studio preview, and fixed its card-media slots to 170px.
 
 ### Iteration 2
 
-- [P2] The AI Listing Studio appeared after proof sections instead of immediately after the hero package.
-- Fix: moved the visual section order so the listing studio follows the metric strip, then tightened the transition spacing.
-- Post-fix evidence: the navy listing-studio section now begins directly below the pilot strip in `implementation-desktop-final.png`.
+- [P2] The navy studio boundary began about 16px below the reference.
+- Fix: set the desktop hero to 660px and tightened the section boundary. The remaining difference is approximately six pixels.
 
 ## Primary interactions tested
 
-- Navigation targets resolved successfully: `#tools`, `#pilot-package`, `#booking`, and `#faq`.
-- Hero and header CTAs resolve to the booking section.
-- Desktop and mobile layouts render successfully in the in-app browser.
-- Browser/server check: page title and route loaded successfully; local preview requests returned 200 and no application errors were observed during the tested states.
+- Production build and rendered-HTML test passed: 1 test, 0 failures.
+- Navigation targets resolved and were visible in the in-app browser: `#tools`, `#workflows`, `#pilot-package`, `#booking`, and `#faq`.
+- Desktop and mobile layouts rendered successfully in the in-app browser.
+- Page title and route loaded successfully; no application errors were observed in the tested states.
 
 ## Findings
 
-No actionable P0, P1 or P2 issues remain. The use of the supplied bilingual HomeDash logo and the full-width pilot metrics are intentional deviations from the generated concept.
+No actionable P0, P1 or P2 issues remain. The use of the supplied bilingual HomeDash logo and real product assets is an intentional fidelity improvement over the generated placeholders.
 
 ## Follow-up polish
 
-- [P3] A future brand pass could replace the concept’s generic HomeDash.ai lockup with an official Singapore-specific English lockup if one is supplied.
+- [P3] If an official Singapore-specific English-only HomeDash lockup is supplied later, it can replace the bilingual logo without changing the layout.
 
 final result: passed
