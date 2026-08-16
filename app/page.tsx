@@ -412,7 +412,13 @@ export default function Home() {
       <footer>
         <a className="brand footer-brand" href="#top" aria-label="HomeDash Singapore home"><img className="brand-logo" src="/homedash-logo.png" alt="HomeDash" width="476" height="186" /></a>
         <p>AI operating systems for real estate agencies.</p>
-        <div><a href="https://homedash.ai/" target="_blank" rel="noreferrer">Global site ↗</a><a href="mailto:info@homedash.hk">Contact</a><a href="#top">Back to top ↑</a></div>
+        <div className="footer-details">
+          <a href="mailto:max@homedash.hk">Email: max@homedash.hk</a>
+          <span>Location: Hong Kong</span>
+          <a href="https://wa.me/85293173883" target="_blank" rel="noreferrer" aria-label="Contact HomeDash on WhatsApp at +852 9317 3883">WhatsApp: +852 9317 3883 ↗</a>
+          <a href="https://homedash.ai/" target="_blank" rel="noreferrer">Global site ↗</a>
+          <a href="#top">Back to top ↑</a>
+        </div>
         <span>© 2026 HomeDash.ai</span>
       </footer>
     </main>
