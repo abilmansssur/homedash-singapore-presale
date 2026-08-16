@@ -44,43 +44,44 @@ export default function Home() {
         <nav aria-label="Primary navigation">
           <a href="#top">Home</a>
           <a href="#tools">Features</a>
-          <a href="#workflow">How it works</a>
+          <a href="#pilot-package">Pilot</a>
+          <a href="#review">Reviews</a>
           <a href="#faq">FAQ</a>
         </nav>
         <a className="button button-small" href="#booking">Join the agent pilot</a>
       </header>
 
-      <section className="hero hero-artwork-section" id="top" aria-labelledby="hero-title">
-        <img
-          className="hero-artwork"
-          src="/homedash-singapore-hero.png"
-          alt="HomeDash Singapore AI Listing Studio showing one property transformed into a listing video, an agent-avatar property tour and approved social media campaigns"
-          width="1735"
-          height="907"
-          fetchPriority="high"
-        />
-        <div className="hero-accessible-copy">
-          <p>Singapore market pilot · Presale 2026</p>
-          <h1 id="hero-title">One listing. Three ways to win attention.</h1>
-        </div>
-        <div className="hero-mobile-copy">
-          <p className="eyebrow"><span className="pulse" /> Singapore market pilot · Presale 2026</p>
-          <h2>One listing.<br /><em>Three ways</em> to win attention.</h2>
-          <p>Turn property photos into listing videos, agent-led AI tours and approved social campaigns.</p>
-          <a className="button" href="#booking">Join the agent pilot <span aria-hidden="true">↗</span></a>
+      <section className="hero hero-redesign" id="top" aria-labelledby="hero-title">
+        <figure className="hero-property-visual">
+          <img
+            src="/homedash-singapore-hero.png"
+            alt="A Singapore property transformed by HomeDash into a listing video, agent-avatar tour and social campaign"
+            width="1735"
+            height="907"
+            fetchPriority="high"
+          />
+          <figcaption>
+            <span>AI LISTING STUDIO</span>
+            <strong>Photos in. Three publish-ready formats out.</strong>
+          </figcaption>
+        </figure>
+        <div className="hero-redesign-copy">
+          <p className="eyebrow">HomeDash Singapore · Presale 2026</p>
+          <h1 id="hero-title">Turn one listing into <em>a week of marketing.</em></h1>
+          <p className="hero-lede">Create listing videos, agent-led property tours and ready-to-publish social content from property photos.</p>
+          <div className="hero-actions">
+            <a className="button" href="#booking">Join the agent pilot <span aria-hidden="true">↗</span></a>
+            <a className="hero-demo-link" href="#tools">Watch the three demos <span aria-hidden="true">↓</span></a>
+          </div>
+          <p className="hero-microcopy">Rolling applications · No credit card · Agent and team pathways</p>
         </div>
       </section>
 
-      <section className="hero-pilot-strip" aria-label="Singapore pilot proof and actions">
-        <div className="hero-pilot-actions">
-          <a className="button" href="#booking">Join the agent pilot <span aria-hidden="true">↗</span></a>
-          <a className="text-link" href="#tools">Watch the three demos ↓</a>
-        </div>
+      <section className="hero-pilot-strip" aria-label="Singapore pilot package highlights">
         <div className="hero-proof-list">
-          <span><strong>7 days</strong> unlimited generation</span>
-          <span><strong>≈ 5 min</strong> from ready photos</span>
-          <span><strong>3 formats</strong> AutoPan, Classic Tour, Social Video</span>
-          <span><strong>Rolling</strong> applications</span>
+          <span><strong><b>7</b> days</strong><small>unlimited video generation</small></span>
+          <span><strong><b>≈5</b> min</strong><small>from ready property photos</small></span>
+          <span><strong><b>3</b> formats</strong><small>Photo Motion, Classic Tour, Social Video</small></span>
         </div>
       </section>
 
@@ -106,7 +107,7 @@ export default function Home() {
         </div>
       </section>
 
-      <section className="review-section" aria-labelledby="review-title">
+      <section className="review-section" id="review" aria-labelledby="review-title">
         <div className="review-heading">
           <p className="eyebrow light">Verified public review</p>
           <h2 id="review-title">Early feedback from HomeDash Hong Kong.</h2>
@@ -200,7 +201,7 @@ export default function Home() {
             <span>Included in your one-week pilot</span>
             <h3>The AI Listing Studio</h3>
             <ul>
-              <li>Unlimited AutoPan, Classic Tour and Social Video generation</li>
+              <li>Unlimited Photo Motion Video, Classic Tour and Social Video generation</li>
               <li>Agent-avatar setup from one photo and a short voice note</li>
               <li>Automated social campaign drafts and approval-ready content</li>
             </ul>
@@ -285,7 +286,7 @@ export default function Home() {
         </ol>
       </section>
 
-      <section className="pilot-package-section" aria-labelledby="pilot-package-title">
+      <section className="pilot-package-section" id="pilot-package" aria-labelledby="pilot-package-title">
         <div className="pilot-package-heading">
           <div>
             <p className="eyebrow">Singapore pilot package</p>
@@ -294,13 +295,13 @@ export default function Home() {
           <div className="rolling-note"><span className="live-dot" /> Applications reviewed on a rolling basis</div>
         </div>
         <div className="pilot-package-stats">
-          <article><strong>7 days</strong><h3>Unlimited generation</h3><p>Generate as many property videos as you need during your pilot week.</p></article>
-          <article><strong>≈ 5 min</strong><h3>From photos to video</h3><p>When the property photos are ready, production time is reduced to approximately five minutes.</p></article>
-          <article><strong>3 formats</strong><h3>Choose the right story</h3><p>Use AutoPan, Classic Tour or Social Video for each listing and channel.</p></article>
-          <article><strong>1 + 1</strong><h3>Your agent avatar</h3><p>Provide one approved agent picture and a short voice note to appear in Social Videos.</p></article>
+          <article><strong><b>7</b> days</strong><p>unlimited video generation</p></article>
+          <article><strong><b>≈5</b> min</strong><p>from ready property photos</p></article>
+          <article><strong><b>3</b> formats</strong><p>Photo Motion, Classic Tour, Social Video</p></article>
         </div>
+        <p className="pilot-avatar-note"><strong>Agent-avatar Social Video:</strong> provide one approved agent photo and a short voice note to appear in your videos.</p>
         <div className="pilot-formats" aria-label="Video formats included in the HomeDash pilot">
-          <div><span>01</span><strong>AutoPan</strong><p>Add smooth motion to static property photos.</p></div>
+          <div><span>01</span><strong>Photo Motion Video</strong><p>Add smooth motion to static property photos.</p></div>
           <div><span>02</span><strong>Classic Tour</strong><p>Turn listing images into a guided property story.</p></div>
           <div><span>03</span><strong>Social Video</strong><p>Bring the agent on-screen through an approved avatar and voice.</p></div>
         </div>
@@ -366,7 +367,7 @@ export default function Home() {
           <article className="faq-group">
             <div className="faq-category"><span>01</span><h3>Pilot access</h3></div>
             <div className="faq-list">
-              <details><summary>What is included in the one-week pilot?</summary><p>Unlimited generation across AutoPan, Classic Tour and Social Video, plus agent-avatar setup and approval-ready social campaign drafts.</p></details>
+              <details><summary>What is included in the one-week pilot?</summary><p>Unlimited generation across Photo Motion Video, Classic Tour and Social Video, plus agent-avatar setup and approval-ready social campaign drafts.</p></details>
               <details><summary>How many videos can I generate?</summary><p>There is no video-generation cap during your pilot week. You can test the three formats across as many suitable listings as you need.</p></details>
               <details><summary>Is there an application deadline?</summary><p>No fixed deadline. Applications are reviewed on a rolling basis and pilots begin when a suitable slot is available.</p></details>
             </div>
