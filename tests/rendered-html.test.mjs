@@ -43,7 +43,8 @@ test("server-renders the HomeDash Singapore presale page", async () => {
   assert.doesNotMatch(html, /STOP and do-not-contact|transaction PDF/i);
   assert.match(html, /Part of the wider HomeDash platform/i);
   assert.match(html, /not part of the one-week content pilot/i);
-  assert.match(html, /One week\. Unlimited videos/i);
+  assert.doesNotMatch(html, /One week\. Unlimited videos\. Three ways to publish/i);
+  assert.doesNotMatch(html, /id="pilot-package"/i);
   assert.match(html, /Photo Motion Video/i);
   assert.doesNotMatch(html, /AutoPan/i);
   assert.match(html, /Classic Tour/i);

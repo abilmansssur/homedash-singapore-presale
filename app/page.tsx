@@ -44,7 +44,7 @@ export default function Home() {
         <nav aria-label="Primary navigation">
           <a href="#top">Home</a>
           <a href="#tools">Features</a>
-          <a href="#pilot-package">Pilot</a>
+          <a href="#booking">Pilot</a>
           <a href="#review">Reviews</a>
           <a href="#faq">FAQ</a>
         </nav>
@@ -303,30 +303,6 @@ export default function Home() {
           <li><span>03</span><strong>Approve</strong><p>Your team reviews customer-facing content before it goes live.</p></li>
           <li><span>04</span><strong>Reuse</strong><p>Move approved assets into listings, Reels, owner updates and your content calendar.</p></li>
         </ol>
-      </section>
-
-      <section className="pilot-package-section" id="pilot-package" aria-labelledby="pilot-package-title">
-        <div className="pilot-package-heading">
-          <div>
-            <p className="eyebrow">Singapore pilot package</p>
-            <h2 id="pilot-package-title">One week. Unlimited videos. Three ways to publish.</h2>
-          </div>
-          <div className="rolling-note"><span className="live-dot" /> Applications reviewed on a rolling basis</div>
-        </div>
-        <div className="pilot-package-stats">
-          <article><strong><b>7</b> days</strong><p>unlimited video generation</p></article>
-          <article><strong><b>≈5</b> min</strong><p>from ready property photos</p></article>
-          <article><strong><b>3</b> formats</strong><p>Photo Motion, Classic Tour, Social Video</p></article>
-        </div>
-        <div className="pilot-formats" aria-label="Video formats included in the HomeDash pilot">
-          <div><span>01</span><strong>Photo Motion Video</strong><p>Add smooth motion to static property photos.</p></div>
-          <div><span>02</span><strong>Classic Tour</strong><p>Turn listing images into a guided property story.</p></div>
-          <div><span>03</span><strong>Social Video</strong><p>Bring the agent on-screen through an approved avatar and voice.</p></div>
-        </div>
-        <div className="pilot-package-cta">
-          <p>No fixed application deadline. Start when there is a suitable pilot slot.</p>
-          <a className="button" href="#booking">Join the agent pilot <span aria-hidden="true">↗</span></a>
-        </div>
       </section>
 
       <section className="audience-section" aria-labelledby="audience-title">
