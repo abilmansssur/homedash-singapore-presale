@@ -490,7 +490,7 @@ main>footer { order:13; }
 .preview-card-title b { display:grid; place-items:center; width:30px; height:30px; border-radius:8px; background:var(--orange); color:#08132f; font-size:12px; }
 .preview-image { position:relative; height:170px; min-height:170px; overflow:hidden; border-radius:11px; background:#13234b; }
 .preview-image img { display:block; width:100%; height:100%; object-fit:cover; }
-.preview-image-motion img { object-position:100% center; }
+.preview-image-motion img { object-position:center bottom; }
 .preview-image-tour img { object-position:center 36%; }
 .preview-image-social img { object-position:77% center; }
 .studio-preview-card>strong { min-height:40px; color:#eef2ff; font-size:12px; font-weight:550; line-height:1.4; }

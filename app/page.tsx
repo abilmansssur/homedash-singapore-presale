@@ -72,7 +72,7 @@ export default function Home() {
           <div className="hero-proof-list hero-proof-inline" aria-label="Singapore pilot package highlights">
             <span><strong><b>7</b> days</strong><small>unlimited video generation</small></span>
             <span><strong><b>≈5</b> min</strong><small>from ready property photos</small></span>
-            <span><strong><b>3</b> formats</strong><small>Photo Motion Video, Classic Tour, Social Video</small></span>
+            <span><strong><b>3</b> formats</strong><small>AutoPan, Classic Tour, Social Video</small></span>
           </div>
           <div className="hero-actions">
             <a className="button" href="#booking">Join the agent pilot <span aria-hidden="true">↗</span></a>
@@ -87,9 +87,9 @@ export default function Home() {
           <h2 id="studio-preview-title">One workflow.<br /><em>Three</em> high-impact outputs.</h2>
           <p>From ready property photos to polished, publish-ready content in minutes.</p>
         </div>
-        <a className="studio-preview-card" href="#workflows" aria-label="View the Photo Motion Video workflow">
-          <span className="preview-card-title"><b>01</b> Photo Motion Video</span>
-          <span className="preview-image preview-image-motion"><img src="/homedash-singapore-hero.png" alt="Photo Motion Video property preview" width="1735" height="907" /></span>
+        <a className="studio-preview-card" href="#workflows" aria-label="View the AutoPan workflow">
+          <span className="preview-card-title"><b>01</b> AutoPan</span>
+          <span className="preview-image preview-image-motion"><img src="/autopan-property.png" alt="Bright property interior used for the HomeDash AutoPan preview" width="300" height="220" /></span>
           <strong>Cinematic property highlight with smooth motion.</strong>
         </a>
         <a className="studio-preview-card" href="#workflows" aria-label="View the Classic Tour workflow">
@@ -220,7 +220,7 @@ export default function Home() {
             <span>Included in your one-week pilot</span>
             <h3>The AI Listing Studio</h3>
             <ul>
-              <li>Unlimited Photo Motion Video, Classic Tour and Social Video generation</li>
+              <li>Unlimited AutoPan, Classic Tour and Social Video generation</li>
               <li>Agent-avatar setup from one photo and a short voice note</li>
               <li>Automated social campaign drafts and approval-ready content</li>
             </ul>
@@ -361,7 +361,7 @@ export default function Home() {
           <article className="faq-group">
             <div className="faq-category"><span>01</span><h3>Pilot access</h3></div>
             <div className="faq-list">
-              <details><summary>What is included in the one-week pilot?</summary><p>Unlimited generation across Photo Motion Video, Classic Tour and Social Video, plus agent-avatar setup and approval-ready social campaign drafts.</p></details>
+              <details><summary>What is included in the one-week pilot?</summary><p>Unlimited generation across AutoPan, Classic Tour and Social Video, plus agent-avatar setup and approval-ready social campaign drafts.</p></details>
               <details><summary>How many videos can I generate?</summary><p>There is no video-generation cap during your pilot week. You can test the three formats across as many suitable listings as you need.</p></details>
               <details><summary>Is there an application deadline?</summary><p>No fixed deadline. Applications are reviewed on a rolling basis and pilots begin when a suitable slot is available.</p></details>
             </div>
