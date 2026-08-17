@@ -488,7 +488,6 @@ main>footer { order:13; }
 .studio-preview-card:hover { transform:translateY(-3px); border-color:var(--orange); }
 .preview-card-title { display:flex; align-items:center; gap:12px; font-size:14px; font-weight:750; }
 .preview-card-title b { display:grid; place-items:center; width:30px; height:30px; border-radius:8px; background:var(--orange); color:#08132f; font-size:12px; }
-.studio-preview-card:nth-of-type(3) .preview-card-title b { background:var(--teal); }
 .preview-image { position:relative; height:170px; min-height:170px; overflow:hidden; border-radius:11px; background:#13234b; }
 .preview-image img { display:block; width:100%; height:100%; object-fit:cover; }
 .preview-image-motion img { object-position:100% center; }
