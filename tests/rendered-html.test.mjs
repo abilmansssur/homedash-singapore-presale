@@ -25,8 +25,9 @@ test("server-renders the HomeDash Singapore presale page", async () => {
   assert.match(html, /Turn one listing into/);
   assert.match(html, /\/homedash-singapore-hero\.png/i);
   assert.match(html, /Static image → AI video/i);
-  assert.match(html, /Agent-led AI property tour/i);
-  assert.match(html, /Automated social marketing/i);
+  assert.match(html, /Classic property tour/i);
+  assert.match(html, /Agent-avatar Social Video/i);
+  assert.match(html, /no agent avatar required/i);
   assert.match(html, /RICACORP PROPERTIES/i);
   assert.match(html, /CENTURY 21/i);
   assert.match(html, /\/logo-ricacorp\.png/i);
@@ -49,12 +50,13 @@ test("server-renders the HomeDash Singapore presale page", async () => {
   assert.doesNotMatch(html, /Photo Motion Video/i);
   assert.match(html, /\/autopan-property\.png/i);
   assert.match(html, /Classic Tour/i);
+  assert.match(html, /38ab8d27-a064-48fa-a9e9-d94ca4283a1a\.mp4/i);
+  assert.match(html, /c87b9e6d4a634528b20b3563174407e6\.mp4/i);
   assert.match(html, /approximately five minutes/i);
   assert.doesNotMatch(html, /id="demos"|See the workflows in action/i);
-  assert.match(html, /\/videos\/property-tour-demo\.mp4/i);
   assert.match(html, /\/videos\/automated-post-creation\.mp4/i);
-  assert.match(html, /\/videos\/automated-marketing\.mp4/i);
-  assert.match(html, /\/videos\/property-tour-poster\.jpg/i);
+  assert.doesNotMatch(html, /\/videos\/property-tour-demo\.mp4/i);
+  assert.doesNotMatch(html, /\/videos\/automated-marketing\.mp4/i);
   assert.match(html, /\/dashboard-property-tour\.png/i);
   assert.match(html, /\/dashboard-image-processing\.png/i);
   assert.match(html, /\/dashboard-listing-poster\.png/i);

@@ -12,24 +12,24 @@ const tools = [
   },
   {
     number: "02",
-    eyebrow: "AGENT-LED AI PROPERTY TOUR",
-    title: "Put the agent back inside every property story.",
-    copy: "Add one approved agent photo and a short voice sample. HomeDash creates an agent-avatar property tour that feels personal, consistent and ready for your brand review.",
-    points: ["Agent avatar", "Branded voiceover", "Reusable format"],
-    input: "Property photos + one agent photo + a short voice note",
-    time: "≈ 5 minutes with ready assets",
-    bestFor: "Personal branding · Agent-led tours · Social video",
-    visual: "avatar",
+    eyebrow: "CLASSIC PROPERTY TOUR",
+    title: "Guide buyers through the property—without filming.",
+    copy: "Upload property photos and listing details. HomeDash arranges the rooms into a clear, polished tour with smooth movement, captions and voiceover—no agent avatar required.",
+    points: ["Guided room sequence", "Branded voiceover", "Reusable tour format"],
+    input: "Property photos + listing details",
+    time: "≈ 5 minutes with ready photos",
+    bestFor: "Property tours · Listing pages · Owner updates",
+    visual: "tour",
   },
   {
     number: "03",
-    eyebrow: "AUTOMATED SOCIAL MARKETING",
-    title: "Keep your content calendar moving—with control.",
-    copy: "Turn listings and local market signals into branded images, captions and campaign drafts. Your team approves customer-facing work before anything is published.",
-    points: ["Local content research", "Brand-aware drafts", "Approved work moves into the content calendar"],
-    input: "Listing details + brand settings + local market signals",
-    time: "Minutes to a review-ready campaign draft",
-    bestFor: "Consistent campaigns · Content calendars · Reels",
+    eyebrow: "AGENT-AVATAR SOCIAL VIDEO",
+    title: "Put the agent inside every social property story.",
+    copy: "Provide one approved agent photo and a short voice note. HomeDash creates an agent-avatar Social Video, then prepares branded captions and approval-ready campaign drafts for your content calendar.",
+    points: ["Agent avatar", "Branded voiceover", "Approval-ready social campaign"],
+    input: "Property photos + one agent photo + a short voice note",
+    time: "≈ 5 minutes with ready assets",
+    bestFor: "Personal branding · Social Video · Reels",
     visual: "social",
   },
 ];
@@ -55,7 +55,7 @@ export default function Home() {
         <figure className="hero-property-visual">
           <img
             src="/homedash-singapore-hero.png"
-            alt="A Singapore property transformed by HomeDash into a listing video, agent-avatar tour and social campaign"
+            alt="A Singapore property transformed by HomeDash into a listing video, Classic Tour and agent-avatar Social Video campaign"
             width="1735"
             height="907"
             fetchPriority="high"
@@ -68,7 +68,7 @@ export default function Home() {
         <div className="hero-redesign-copy">
           <p className="eyebrow">HomeDash Singapore · Presale 2026</p>
           <h1 id="hero-title">Turn one listing into <em>a week of marketing.</em></h1>
-          <p className="hero-lede">Create listing videos, agent-led property tours and ready-to-publish social content from property photos.</p>
+          <p className="hero-lede">Create listing videos, guided property tours and agent-avatar social content from property photos.</p>
           <div className="hero-proof-list hero-proof-inline" aria-label="Singapore pilot package highlights">
             <span><strong><b>7</b> days</strong><small>unlimited video generation</small></span>
             <span><strong><b>≈5</b> min</strong><small>from ready property photos</small></span>
@@ -94,13 +94,21 @@ export default function Home() {
         </a>
         <a className="studio-preview-card" href="#workflows" aria-label="View the Classic Tour workflow">
           <span className="preview-card-title"><b>02</b> Classic Tour</span>
-          <span className="preview-image preview-image-tour"><img src="/videos/property-tour-poster.jpg" alt="Agent-led Classic Tour preview" width="480" height="854" /></span>
-          <strong>Agent-led tour with avatar and natural voice.</strong>
+          <span className="preview-image preview-image-tour">
+            <video muted autoPlay loop playsInline preload="metadata" aria-label="Classic Tour video preview without an agent avatar">
+              <source src="https://d307szzrc0oh92.cloudfront.net/videos/38ab8d27-a064-48fa-a9e9-d94ca4283a1a.mp4" type="video/mp4" />
+            </video>
+          </span>
+          <strong>Guided property tour with smooth movement and no agent avatar.</strong>
         </a>
         <a className="studio-preview-card" href="#workflows" aria-label="View the Social Video workflow">
           <span className="preview-card-title"><b>03</b> Social Video</span>
-          <span className="preview-image preview-image-social"><img src="/homedash-singapore-hero.png" alt="Social Video property preview" width="1735" height="907" /></span>
-          <strong>Short, attention-grabbing clips for every platform.</strong>
+          <span className="preview-image preview-image-social">
+            <video muted autoPlay loop playsInline preload="metadata" aria-label="Social Video preview featuring an AI agent avatar">
+              <source src="https://d307szzrc0oh92.cloudfront.net/ai-videos/seedance2-final/c87b9e6d4a634528b20b3563174407e6.mp4" type="video/mp4" />
+            </video>
+          </span>
+          <strong>Agent-avatar Social Video created from one photo and a short voice note.</strong>
         </a>
       </section>
 
@@ -184,24 +192,22 @@ export default function Home() {
                     <span className="tool-video-duration">00:55</span>
                   </>
                 )}
-                {tool.visual === "avatar" && (
+                {tool.visual === "tour" && (
                   <>
-                    <video controls playsInline preload="metadata" poster="/videos/property-tour-poster.jpg" aria-label="HomeDash AI property tour demonstration">
-                      <source src="/videos/property-tour-demo.mp4" type="video/mp4" />
+                    <video controls playsInline preload="metadata" aria-label="HomeDash Classic Tour demonstration without an agent avatar">
+                      <source src="https://d307szzrc0oh92.cloudfront.net/videos/38ab8d27-a064-48fa-a9e9-d94ca4283a1a.mp4" type="video/mp4" />
                       Your browser does not support embedded video.
                     </video>
-                    <span className="tool-video-label">AI property tour</span>
-                    <span className="tool-video-duration">00:57</span>
+                    <span className="tool-video-label">Classic Tour</span>
                   </>
                 )}
                 {tool.visual === "social" && (
                   <>
-                    <video controls playsInline preload="metadata" poster="/videos/automated-marketing-poster.jpg" aria-label="HomeDash automated marketing workflow demonstration">
-                      <source src="/videos/automated-marketing.mp4" type="video/mp4" />
+                    <video controls playsInline preload="metadata" aria-label="HomeDash agent-avatar Social Video demonstration">
+                      <source src="https://d307szzrc0oh92.cloudfront.net/ai-videos/seedance2-final/c87b9e6d4a634528b20b3563174407e6.mp4" type="video/mp4" />
                       Your browser does not support embedded video.
                     </video>
-                    <span className="tool-video-label">Automated marketing</span>
-                    <span className="tool-video-duration">00:52</span>
+                    <span className="tool-video-label">Agent-avatar Social Video</span>
                   </>
                 )}
               </div>
@@ -334,7 +340,7 @@ export default function Home() {
           <ul className="pilot-benefits">
             <li><span>01</span><div><strong>Singapore-ready workflow</strong><p>Localised around your listing, brand and team structure.</p></div></li>
             <li><span>02</span><div><strong>Early product influence</strong><p>Help shape the templates and controls your team needs.</p></div></li>
-            <li><span>03</span><div><strong>Focused first use case</strong><p>Start with video, avatar tours or social marketing—not a giant rollout.</p></div></li>
+            <li><span>03</span><div><strong>Focused first use case</strong><p>Start with AutoPan, Classic Tour or agent-avatar Social Video—not a giant rollout.</p></div></li>
           </ul>
         </div>
         <div className="booking-panel" id="booking">
@@ -371,7 +377,7 @@ export default function Home() {
             <div className="faq-list">
               <details><summary>Do agents need to film the property?</summary><p>No. HomeDash starts from property photos and listing details, then prepares motion, captions and voiceover for review.</p></details>
               <details><summary>How quickly can a video be produced?</summary><p>When property photos are ready, the HomeDash workflow can reduce production time to approximately five minutes.</p></details>
-              <details><summary>What is needed for an agent-avatar video?</summary><p>One approved agent picture and a short voice note, together with the listing assets and brand preferences.</p></details>
+              <details><summary>What is needed for an agent-avatar Social Video?</summary><p>One approved agent picture and a short voice note, together with the listing assets and brand preferences. Classic Tour does not require an agent avatar.</p></details>
             </div>
           </article>
           <article className="faq-group">
