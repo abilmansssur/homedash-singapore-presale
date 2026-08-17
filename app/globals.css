@@ -105,6 +105,7 @@ h1 em, h2 em { color: var(--orange); font-weight: inherit; }
 .section-heading h2,.workflow-heading h2,.pilot-copy h2,.faq-section h2 { font-size:clamp(44px,5vw,70px); line-height:1.04; color:var(--navy); }
 .section-heading > p { max-width:480px; margin:0 0 8px; font-size:18px; line-height:1.6; color:var(--muted); }
 .tool-list { display:grid; gap:0; }
+.tool-row { scroll-margin-top:96px; }
 .tool-row { min-height:570px; display:grid; grid-template-columns:.82fr 1.18fr; gap:8vw; align-items:center; padding:75px 0; border-top:1px solid var(--line); }
 .tool-row:nth-child(even) .tool-copy { order:2; }.tool-row:nth-child(even) .tool-visual { order:1; }
 .tool-copy { position:relative; padding-left:58px; }.tool-number { position:absolute; left:0; top:1px; color:#b7bdcd; font:700 13px var(--font-geist-mono); }

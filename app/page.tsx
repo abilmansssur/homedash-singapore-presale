@@ -1,6 +1,7 @@
 const tools = [
   {
     number: "01",
+    id: "static-image-ai-video",
     eyebrow: "STATIC IMAGE → AI VIDEO",
     title: "Turn listing photos into scroll-stopping motion.",
     copy: "Upload a set of property photos and HomeDash prepares a polished vertical listing video—camera movement, captions, transitions and voiceover included.",
@@ -12,6 +13,7 @@ const tools = [
   },
   {
     number: "02",
+    id: "classic-property-tour",
     eyebrow: "CLASSIC PROPERTY TOUR",
     title: "Guide buyers through the property—without filming.",
     copy: "Upload property photos and listing details. HomeDash arranges the rooms into a clear, polished tour with smooth movement, captions and voiceover—no agent avatar required.",
@@ -23,6 +25,7 @@ const tools = [
   },
   {
     number: "03",
+    id: "agent-avatar-social-video",
     eyebrow: "AGENT-AVATAR SOCIAL VIDEO",
     title: "Put the agent inside every social property story.",
     copy: "Provide one approved agent photo and a short voice note. HomeDash creates an agent-avatar Social Video, then prepares branded captions and approval-ready campaign drafts for your content calendar.",
@@ -87,12 +90,12 @@ export default function Home() {
           <h2 id="studio-preview-title">One workflow.<br /><em>Three</em> high-impact outputs.</h2>
           <p>From ready property photos to polished, publish-ready content in minutes.</p>
         </div>
-        <a className="studio-preview-card" href="#workflows" aria-label="View the AutoPan workflow">
+        <a className="studio-preview-card" href="#static-image-ai-video" aria-label="Go to the Static Image to AI Video workflow">
           <span className="preview-card-title"><b>01</b> AutoPan</span>
           <span className="preview-image preview-image-motion"><img src="/autopan-property.png" alt="Bright property interior used for the HomeDash AutoPan preview" width="300" height="220" /></span>
           <strong>Cinematic property highlight with smooth motion.</strong>
         </a>
-        <a className="studio-preview-card" href="#workflows" aria-label="View the Classic Tour workflow">
+        <a className="studio-preview-card" href="#classic-property-tour" aria-label="Go to the Classic Property Tour workflow">
           <span className="preview-card-title"><b>02</b> Classic Tour</span>
           <span className="preview-image preview-image-tour">
             <video muted autoPlay loop playsInline preload="metadata" aria-label="Classic Tour video preview without an agent avatar">
@@ -101,7 +104,7 @@ export default function Home() {
           </span>
           <strong>Guided property tour with smooth movement and no agent avatar.</strong>
         </a>
-        <a className="studio-preview-card" href="#workflows" aria-label="View the Social Video workflow">
+        <a className="studio-preview-card" href="#agent-avatar-social-video" aria-label="Go to the Agent-avatar Social Video workflow">
           <span className="preview-card-title"><b>03</b> Social Video</span>
           <span className="preview-image preview-image-social">
             <video muted autoPlay loop playsInline preload="metadata" aria-label="Social Video preview featuring an AI agent avatar">
@@ -165,7 +168,7 @@ export default function Home() {
 
         <div className="tool-list">
           {tools.map((tool) => (
-            <article className="tool-row" key={tool.number}>
+            <article className="tool-row" id={tool.id} key={tool.number}>
               <div className="tool-copy">
                 <span className="tool-number">{tool.number}</span>
                 <p className="eyebrow">{tool.eyebrow}</p>

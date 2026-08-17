@@ -50,6 +50,12 @@ test("server-renders the HomeDash Singapore presale page", async () => {
   assert.doesNotMatch(html, /Photo Motion Video/i);
   assert.match(html, /\/autopan-property\.png/i);
   assert.match(html, /Classic Tour/i);
+  assert.match(html, /href="#static-image-ai-video"/i);
+  assert.match(html, /href="#classic-property-tour"/i);
+  assert.match(html, /href="#agent-avatar-social-video"/i);
+  assert.match(html, /id="static-image-ai-video"/i);
+  assert.match(html, /id="classic-property-tour"/i);
+  assert.match(html, /id="agent-avatar-social-video"/i);
   assert.match(html, /38ab8d27-a064-48fa-a9e9-d94ca4283a1a\.mp4/i);
   assert.match(html, /c87b9e6d4a634528b20b3563174407e6\.mp4/i);
   assert.match(html, /approximately five minutes/i);
