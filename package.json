@@ -11,11 +11,13 @@
     "build:vercel": "next build",
     "start": "vinext start",
     "start:vercel": "next start",
-    "test": "npm run build && node --test tests/rendered-html.test.mjs",
-    "lint": "eslint . --ignore-pattern dist --ignore-pattern .next",
+    "test": "npm run test:mortgage && npm run build && node --test tests/rendered-html.test.mjs",
+    "test:mortgage": "tsx --test tests/mortgage-calculator.test.ts tests/cpf-affordability-calculator.test.ts",
+    "lint": "eslint . --ignore-pattern dist --ignore-pattern .next --ignore-pattern work",
     "db:generate": "drizzle-kit generate"
   },
   "dependencies": {
+    "decimal.js": "^10.6.0",
     "drizzle-orm": "0.45.2",
     "next": "16.2.6",
     "react": "19.2.6",

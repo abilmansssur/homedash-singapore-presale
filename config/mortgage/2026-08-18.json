@@ -1,0 +1,122 @@
+{
+  "effective_from": "2026-08-18",
+  "source": "https://www.hdb.gov.sg/buying-a-flat/flat-grant-and-loan-eligibility/housing-loan/housing-loan-from-hdb",
+  "verified_on": "2026-08-18",
+  "verified_by": "HomeDash implementation review",
+  "review_due_on": "2027-02-18",
+  "sources": {
+    "hdb_concessionary_ltv": "https://www.hdb.gov.sg/buying-a-flat/flat-grant-and-loan-eligibility/housing-loan/housing-loan-from-hdb",
+    "bank_ltv_tdsr_msr": "https://www.moneysense.gov.sg/buying-a-property-how-much-can-you-afford/",
+    "mas_residential_property_loans": "https://www.mas.gov.sg/-/media/MAS/Notices/PDF/2020-04-06-Notice-632_LTV.pdf",
+    "mas_tdsr": "https://www.mas.gov.sg/-/media/MAS/Notices/PDF/2020-02-17-MAS-645_TDSR.pdf",
+    "cpf_housing_usage": "https://www.cpf.gov.sg/member/infohub/educational-resources/how-much-cpf-savings-you-can-use-for-your-home-purchase",
+    "cpf_restricted_lease": "https://www.cpf.gov.sg/service/article/how-much-cpf-savings-can-i-use-to-buy-a-property-if-its-lease-does-not-cover-the-youngest-buyer-to-age-95",
+    "cpf_housing_calculator": "https://www.cpf.gov.sg/member/tools-and-services/calculators/cpf-housing-usage",
+    "cpf_accrued_interest": "https://www.cpf.gov.sg/service/article/why-do-i-need-to-refund-the-accrued-interest-on-the-amount-of-cpf-savings-used-for-my-property",
+    "cpf_interest_rates": "https://www.cpf.gov.sg/service/article/how-are-cpf-interest-rates-determined",
+    "cpf_retirement_sums": "https://www.cpf.gov.sg/service/article/how-much-is-my-basic-retirement-sum",
+    "iras_bsd": "https://www.iras.gov.sg/taxes/stamp-duty/for-property/buying-or-acquiring-property/buyer%27s-stamp-duty-%28bsd%29",
+    "iras_absd": "https://www.iras.gov.sg/taxes/stamp-duty/for-property/buying-or-acquiring-property/additional-buyer%27s-stamp-duty-%28absd%29"
+  },
+  "notes": [
+    "HDB's housing-loan page is authoritative for the 75% concessionary LTV effective for complete resale applications received on or after 20 August 2024 and the October 2024 sales exercise onwards.",
+    "MoneySense's current bank-LTV table is used for bank-loan LTV and minimum-cash tiers. Its separate HDB comparison row still states 80%, so it is not used for the HDB concessionary LTV.",
+    "The income-weighted average age is the ceiling of the income-weighted borrower ages. This convention should be rechecked against the current MAS Notice 632 at the scheduled review."
+  ],
+  "rules": {
+    "ltv": {
+      "bank": {
+        "0": {
+          "standard": "0.75",
+          "reduced": "0.55",
+          "minimum_cash_standard": "0.05",
+          "minimum_cash_reduced": "0.10"
+        },
+        "1": {
+          "standard": "0.45",
+          "reduced": "0.25",
+          "minimum_cash_standard": "0.25",
+          "minimum_cash_reduced": "0.25"
+        },
+        "2": {
+          "standard": "0.35",
+          "reduced": "0.15",
+          "minimum_cash_standard": "0.25",
+          "minimum_cash_reduced": "0.25"
+        }
+      },
+      "hdb_concessionary": {
+        "standard": "0.75",
+        "minimum_cash": "0"
+      }
+    },
+    "tenure": {
+      "private_bank": {
+        "maximum_years": 35,
+        "reduced_ltv_above_years": 30
+      },
+      "hdb_bank": {
+        "maximum_years": 30,
+        "reduced_ltv_above_years": 25
+      },
+      "ec_bank": {
+        "maximum_years": 35,
+        "reduced_ltv_above_years": 30
+      },
+      "hdb_concessionary": {
+        "maximum_years": 25,
+        "maximum_borrower_age_at_end": 65
+      },
+      "reduced_ltv_borrower_age_at_end": 65,
+      "iwaa_rounding": "ceiling"
+    },
+    "affordability": {
+      "tdsr_ratio": "0.55",
+      "msr_ratio": "0.30",
+      "variable_income_weight": "0.70",
+      "stress_rate_floor": {
+        "bank": "0.04",
+        "hdb_concessionary": "0.03"
+      },
+      "msr_property_types": ["hdb", "ec_developer"],
+      "joint_binding_threshold": "0.02",
+      "iteration_tolerance": "1000",
+      "price_round_down_increment": "10000",
+      "default_legal_fees": "3000",
+      "default_valuation_fee": "500",
+      "default_miscellaneous_fees": "1000"
+    },
+    "cpf": {
+      "valuation_limit_multiplier": "1",
+      "withdrawal_limit_multiplier": "1.20",
+      "minimum_remaining_lease_years_exclusive": 20,
+      "lease_coverage_age": 95,
+      "oa_interest_rate": "0.025",
+      "current_brs": "110200",
+      "current_frs": "220400",
+      "current_ers": "440800",
+      "official_calculator_url": "https://www.cpf.gov.sg/member/tools-and-services/calculators/cpf-housing-usage",
+      "accrued_interest_crossover_ratio": "0.25"
+    },
+    "stamp_duty": {
+      "bsd_brackets": [
+        { "up_to": "180000", "rate": "0.01" },
+        { "up_to": "360000", "rate": "0.02" },
+        { "up_to": "1000000", "rate": "0.03" },
+        { "up_to": "1500000", "rate": "0.04" },
+        { "up_to": "3000000", "rate": "0.05" },
+        { "up_to": null, "rate": "0.06" }
+      ],
+      "absd_rates": {
+        "citizen": ["0", "0.20", "0.30"],
+        "permanent_resident": ["0.05", "0.30", "0.35"],
+        "foreigner": ["0.60", "0.60", "0.60"]
+      }
+    },
+    "rate_sensitivity": {
+      "lower_delta": "-0.01",
+      "upper_delta": "0.01",
+      "step": "0.005"
+    }
+  }
+}

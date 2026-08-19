@@ -47,6 +47,13 @@ export default function Home() {
         <nav aria-label="Primary navigation">
           <a href="#top">Home</a>
           <a href="#tools">Features</a>
+          <details className="nav-dropdown">
+            <summary>Tools <span aria-hidden="true">⌄</span></summary>
+                <div className="nav-dropdown-menu">
+                  <a href="/mortgage">Mortgage Calculator</a>
+                  <a href="/affordability">Affordability Calculator</a>
+                </div>
+          </details>
           <a href="#booking">Pilot</a>
           <a href="#review">Reviews</a>
           <a href="#faq">FAQ</a>
