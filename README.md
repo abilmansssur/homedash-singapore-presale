@@ -163,8 +163,3 @@ The repository is already configured through `vercel.json` to run `npm ci` and `
 
 Please report security issues privately using the process in [`SECURITY.md`](SECURITY.md). Development and pull-request guidance is available in [`CONTRIBUTING.md`](CONTRIBUTING.md).
 
-## Contact
-
-- Email: max@homedash.hk
-- WhatsApp: https://wa.me/85293173883
-- Global website: https://homedash.ai/
