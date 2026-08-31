@@ -133,6 +133,8 @@ vercel.json                  Vercel build configuration
 
 The source repository can be stored on GitHub, while Vercel serves the production website. GitHub Pages is not used because the application includes server-rendered pages and API routes.
 
+For the complete repository creation, visibility, branch-protection, and verification checklist, see [`GITHUB_PUBLISHING.md`](GITHUB_PUBLISHING.md).
+
 ### Deploy to Vercel from a workstation
 
 ```bash
@@ -158,6 +160,8 @@ The repository is already configured through `vercel.json` to run `npm ci` and `
 - Do not put real client financial information into test fixtures or screenshots.
 - Review dependency advisories and regulatory configuration before each production release.
 - Treat exported result cards as estimates and keep the disclaimer visible.
+
+Please report security issues privately using the process in [`SECURITY.md`](SECURITY.md). Development and pull-request guidance is available in [`CONTRIBUTING.md`](CONTRIBUTING.md).
 
 ## Contact
 
